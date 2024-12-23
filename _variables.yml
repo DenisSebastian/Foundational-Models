@@ -1,0 +1,34 @@
+version: 1
+
+email:
+  author: <denisberroeta@gmail.com>
+  
+autor:
+  name: "[Denis Berroeta](https://denissebastian.github.io/DenisBerroeta/)"
+  cargo: "Coordinador de Investigación, Centro de Inteligencia Territorial - UAI"
+  email: <denisberroeta@gmail.com>
+  web: "[web personal](https://denissebastian.github.io/DenisBerroeta/)"
+
+profesor:
+  name: "[Denis Berroeta](https://cit.uai.cl/denis-berroeta/)"
+  cargo: "Coordinador de Investigación, Centro de Inteligencia Territorial - UAI"
+  email: <denis.berroeta@uai.cl>
+
+llm:
+  name: "LLM"
+  def: "Large Language Model"
+
+tools:
+  langchain: "[Langchain](https://python.langchain.com/v0.2/docs/introduction/)"
+  llamaindex: "[Llamaindex](https://www.llamaindex.ai/)"
+
+engine:
+  jupyter: "[Jupyter](https://jupyter.org)"
+  knitr: "[Knitr](<https://yihui.name/knitr>)"
+  R: "[R Project](https://www.r-project.org)"
+  python: "[Python](https://docs.python.org/es/3/tutorial/)"
+  
+  
+organization:
+  github: "[Github](https://github.com/)"
+  

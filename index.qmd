@@ -1,0 +1,17 @@
+# Preface {.unnumbered}
+
+**"Revisión de Modelos Fundacionales en Remote Sensing: Avances, Desafíos y Aplicaciones"**
+	    
+El propósito de este libro/review es proporcionar una visión integral y actualizada del desarrollo y aplicación de los modelos fundacionales en el área de Remote Sensing. Se analiza cómo estos modelos, a través de técnicas de pre-entrenamiento en grandes volúmenes de datos y ajuste fino en tareas específicas, han revolucionado la interpretación y análisis de datos geoespaciales. Además, se identifican los principales desafíos, se destacan los avances recientes y se proponen direcciones futuras para optimizar el uso de estos modelos en la comunidad científica y profesional.
+
+La motivación central de este review surge de la creciente complejidad y heterogeneidad de los datos en Remote Sensing, que demandan enfoques robustos, escalables y generalizables. A medida que las tecnologías de sensores avanzan, se generan volúmenes masivos de información multiespectral, temporal y espacial, lo que desafía los enfoques tradicionales y requiere la implementación de modelos más sofisticados y eficientes.
+
+El presente trabajo tiene como **objetivo** analizar los avances más recientes en modelos fundacionales aplicados a Remote Sensing, identificar sus aplicaciones clave y explorar los desafíos y oportunidades asociados a su implementación. Este estudio proporciona una perspectiva integral que facilita la comprensión del impacto de estos modelos en el área y establece las bases para futuras investigaciones y desarrollos.
+
+## Autor: 
+
+{{< var autor.name >}}
+
+web: {{< var autor.web >}}, email: {{< var autor.email >}}
+
+Master of Science in Data Science, Magíster en Inteligencia Artificial y cursando un Doctorado en Data Science. Ingeniero en Prevención de Riesgos y Topógrafo. Temas de interés Inteligencia Artificial (LLM, CNN), Análisis espacial, Percepción Remota.

@@ -1,0 +1,162 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Modelos Fundacionales de IA",
+    "section": "",
+    "text": "Preface\n“Revisión de Modelos Fundacionales en Remote Sensing: Avances, Desafíos y Aplicaciones”\nEl propósito de este libro/review es proporcionar una visión integral y actualizada del desarrollo y aplicación de los modelos fundacionales en el área de Remote Sensing. Se analiza cómo estos modelos, a través de técnicas de pre-entrenamiento en grandes volúmenes de datos y ajuste fino en tareas específicas, han revolucionado la interpretación y análisis de datos geoespaciales. Además, se identifican los principales desafíos, se destacan los avances recientes y se proponen direcciones futuras para optimizar el uso de estos modelos en la comunidad científica y profesional.\nLa motivación central de este review surge de la creciente complejidad y heterogeneidad de los datos en Remote Sensing, que demandan enfoques robustos, escalables y generalizables. A medida que las tecnologías de sensores avanzan, se generan volúmenes masivos de información multiespectral, temporal y espacial, lo que desafía los enfoques tradicionales y requiere la implementación de modelos más sofisticados y eficientes.\nEl presente trabajo tiene como objetivo analizar los avances más recientes en modelos fundacionales aplicados a Remote Sensing, identificar sus aplicaciones clave y explorar los desafíos y oportunidades asociados a su implementación. Este estudio proporciona una perspectiva integral que facilita la comprensión del impacto de estos modelos en el área y establece las bases para futuras investigaciones y desarrollos.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "1.1 Conceptos de Modelos Fundacionales\nEl Remote Sensing juega un papel fundamental en la observación y análisis de la Tierra, permitiendo el monitoreo continuo y detallado de nuestro planeta a través de tecnologías satelitales y aéreas. Desde la detección de cambios ambientales hasta la gestión de desastres naturales, su relevancia se ha incrementado exponencialmente en los últimos años gracias a la creciente disponibilidad de datos de alta resolución y la evolución de los métodos de procesamiento.\nEn este contexto, los modelos fundacionales (FMs) representan una innovación significativa. Estos modelos pre-entrenados, capaces de aprender representaciones generales a partir de grandes volúmenes de datos no etiquetados, permiten una adaptación eficiente a tareas específicas con la necesidad de pocos datos anotados. La versatilidad de los FMs radica en su capacidad de abordar múltiples aplicaciones en Remote Sensing, como la segmentación de imágenes, detección de objetos y clasificación de escenas, optimizando así el análisis de datos complejos.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "index.html#autor",
+    "href": "index.html#autor",
+    "title": "Modelos Fundacionales de IA",
+    "section": "Autor:",
+    "text": "Autor:\nDenis Berroeta\nweb: web personal, email: denisberroeta@gmail.com\nMaster of Science in Data Science, Magíster en Inteligencia Artificial y cursando un Doctorado en Data Science. Ingeniero en Prevención de Riesgos y Topógrafo. Temas de interés Inteligencia Artificial (LLM, CNN), Análisis espacial, Percepción Remota.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html#conceptos-de-modelos-fundacionales",
+    "href": "intro.html#conceptos-de-modelos-fundacionales",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "1.1.1 Modelo fundacional (MF)\nUn modelo fundacional se define como un modelo de inteligencia artificial pre-entrenado en grandes volúmenes de datos no etiquetados que puede ser ajustado (fine-tuned) a una variedad de tareas específicas con un esfuerzo computacional significativamente menor. Estos modelos han demostrado capacidades avanzadas de generalización, adaptabilidad y eficiencia en dominios complejos como el Remote Sensing (Xiao et al. 2024).\nEn el ámbito de Remote Sensing, los modelos fundacionales aprovechan datos multiespectrales, temporales y de alta resolución espacial obtenidos de sensores satelitales y aéreos. Su aplicación permite resolver tareas críticas como la clasificación de escenas, segmentación semántica, detección de objetos y detección de cambios con alta precisión y eficiencia computacional (Jakubik et al. 2023).\n\n\n1.1.2 Pre-entrenamiento\nEl pre-entrenamiento es el proceso mediante el cual un modelo aprende representaciones generales del dominio a partir de grandes volúmenes de datos no etiquetados. Esta etapa utiliza técnicas de aprendizaje auto-supervisado (SSL) como el contrastive learning y el masked autoencoding, permitiendo al modelo captar patrones, relaciones y estructuras en los datos sin intervención manual en el etiquetado (Lu et al., 2024). En el caso del Remote Sensing, el pre-entrenamiento se lleva a cabo sobre datos satelitales masivos como Sentinel-2, BigEarthNet o HLS (Jakubik et al. 2023).\n\n\n1.1.3 Fine-Tuning\nEl fine-tuning consiste en ajustar un modelo fundacional pre-entrenado a una tarea específica utilizando un conjunto de datos etiquetados más reducido. Durante esta etapa, el modelo reutiliza las representaciones generales aprendidas en el pre-entrenamiento y las optimiza para una aplicación concreta, como la segmentación de imágenes o la detección de objetos. Este enfoque mejora la eficiencia del modelo al reducir la necesidad de grandes cantidades de datos etiquetados y recursos computacionales (Xiao et al. 2024).\nEn resumen, los modelos fundacionales revolucionan el Remote Sensing al permitir la aplicación eficiente de técnicas avanzadas de inteligencia artificial en tareas complejas y multiespectrales, facilitando el análisis de datos geoespaciales a escala global.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#tipos-de-modelos-fundacionales",
+    "href": "intro.html#tipos-de-modelos-fundacionales",
+    "title": "1  Introduction",
+    "section": "1.2 Tipos de Modelos Fundacionales",
+    "text": "1.2 Tipos de Modelos Fundacionales\nVisual Foundation Models (VFMs): Estos modelos se centran en el procesamiento y análisis de datos visuales, abordando tareas como segmentación semántica, detección de objetos y clasificación de escenas. Utilizan arquitecturas avanzadas como Vision Transformers (ViT) y enfoques auto-supervisados para maximizar la eficiencia en escenarios con datos multiespectrales y de alta resolución (Jakubik et al. 2023), (Lu et al. 2024).\n\nVision-Language Models (VLMs): Diseñados para integrar datos visuales y textuales, estos modelos combinan imágenes satelitales con descripciones textuales para realizar tareas como visual grounding, generación de descripciones automáticas y respuestas a preguntas basadas en imágenes. Su capacidad multimodal permite aplicaciones más intuitivas y precisas en el campo del Remote Sensing (Xiao et al. 2024) .",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#arquitecturas-comunes",
+    "href": "intro.html#arquitecturas-comunes",
+    "title": "1  Introduction",
+    "section": "1.3 Arquitecturas Comunes",
+    "text": "1.3 Arquitecturas Comunes\nConvolutional Neural Networks (CNNs): Estas redes son ampliamente utilizadas por su capacidad para extraer características jerárquicas de imágenes a través de operaciones convolucionales. En Remote Sensing, han demostrado eficacia en tareas como clasificación de imágenes y detección de objetos, pero enfrentan limitaciones en la captura de dependencias globales en imágenes de alta resolución (Lu et al. 2024).\nVision Transformers (ViT): Los Transformers son arquitecturas basadas en mecanismos de self-attention que permiten modelar dependencias de largo alcance en imágenes dividiéndolas en parches tratados como secuencias. Su flexibilidad y precisión los hacen ideales para tareas como la segmentación semántica en datos multiespectrales y multitemporales (Jakubik et al., 2023).\n\n\n\nViT.png\n\n\nMasked Autoencoder (MAE): Este modelo utiliza el enfoque de reconstrucción de imágenes donde una fracción significativa de los píxeles se enmascara durante el entrenamiento, y el modelo aprende a predecir las partes faltantes. En Remote Sensing, los MAE son efectivos para captar patrones en datos satelitales multiespectrales y temporales, optimizando la eficiencia en tareas de imputación y análisis de imágenes incompletas (Xiao et al. 2024).",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#datasets-en-remote-sensing",
+    "href": "intro.html#datasets-en-remote-sensing",
+    "title": "1  Introduction",
+    "section": "1.4 5. Datasets en Remote Sensing",
+    "text": "1.4 5. Datasets en Remote Sensing\n\n\n\n\n\n\n\n\n\n\nNombre del Dataset\nTamaño\nResolución\nCaracterísticas Clave\nPaper de Referencia\n\n\n\n\nSentinel-1/2\n1M+ imágenes\n10-30m\nMultiespectral y temporal\n(Xiao et al. 2024)\n\n\nHarmonized Landsat-Sentinel (HLS)\n1TB\n30m\nImagen multitemporal y multiespectral\n(Jakubik et al. 2023)\n\n\nBigEarthNet\n590K+\n10-60m\nCobertura en Europa\n(Lu et al. 2024)\n\n\nSSL4EO-S12\n3M+\n10-60m\nMultimodal (SAR + óptico)\n(Xiao et al. 2024)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#metodologías-de-pre-entrenamiento",
+    "href": "intro.html#metodologías-de-pre-entrenamiento",
+    "title": "1  Introduction",
+    "section": "1.5 Metodologías de Pre-Entrenamiento",
+    "text": "1.5 Metodologías de Pre-Entrenamiento\n\n1.5.1 Supervised Learning\nEl pre-entrenamiento con datos etiquetados, como en el caso del dataset MillionAID, consiste en entrenar modelos utilizando grandes volúmenes de datos previamente anotados con etiquetas precisas. Este enfoque facilita la capacidad del modelo para capturar representaciones complejas y específicas del dominio, lo que resulta particularmente efectivo en tareas como la clasificación de escenas y la detección de objetos en Remote Sensing (Lu et al. 2024). En este contexto, MillionAID se ha convertido en un recurso clave al proporcionar un conjunto diverso de imágenes que abordan múltiples categorías globales, contribuyendo significativamente al desarrollo de modelos robustos y generalizables (Xiao et al. 2024).\n\n\n1.5.2 Self-Supervised Learning (SSL)\nContrastive Learning: Este enfoque utiliza pares positivos y negativos para maximizar la similitud entre representaciones de datos similares y minimizarla entre diferentes. Los pares positivos se generan generalmente aplicando transformaciones a la misma muestra, como recortes, rotaciones o cambios de escala, mientras que los pares negativos provienen de diferentes muestras dentro del lote de datos. Este mecanismo fuerza al modelo a aprender representaciones invariantes a estas transformaciones, lo que es crucial en datos multitemporales. Por ejemplo, SeCo emplea aprendizaje contrastivo para capturar invariancias temporales en datos de observación terrestre, mientras que GASSL integra geolocalización y aprendizaje temporal para enriquecer las representaciones, aprovechando datos satelitales masivos (Xiao et al. 2024).\nMasked Autoencoding: En este método, el modelo aprende a reconstruir las partes faltantes de una entrada, lo que mejora su comprensión de estructuras globales. SatMAE es un ejemplo clave que se enfoca en datos multiespectrales y multitemporales, mientras que Scale-MAE incorpora información de diferentes escalas para optimizar el aprendizaje (Jakubik et al. 2023).\nMultimodal Pre-training: Este enfoque integra diferentes tipos de datos, como SAR, ópticos y auxiliares, para mejorar la capacidad del modelo en tareas complejas. La combinación de modalidades permite al modelo captar patrones complementarios y abordar la heterogeneidad en datos de Remote Sensing (Lu et al. 2024).",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#aplicaciones-en-tareas-de-remote-sensing",
+    "href": "intro.html#aplicaciones-en-tareas-de-remote-sensing",
+    "title": "1  Introduction",
+    "section": "1.6 Aplicaciones en Tareas de Remote Sensing",
+    "text": "1.6 Aplicaciones en Tareas de Remote Sensing\n\n\n\nFM_tasks.png\n\n\n\n1.6.1 Clasificación de Escenas\nLa clasificación de escenas es el proceso mediante el cual se categorizan imágenes satelitales completas en clases predefinidas, como áreas urbanas, forestales, cuerpos de agua o agrícolas. Este enfoque permite extraer información útil para tareas como la gestión de recursos naturales, el monitoreo ambiental y la planificación urbana. Modelos como GeoKR y CSPT son ejemplos destacados que emplean arquitecturas avanzadas para mejorar la precisión y escalabilidad en este tipo de tareas.\n\n\n1.6.2 Segmentación Semántica\nLa segmentación semántica es una tarea crítica en Remote Sensing que asigna una etiqueta a cada píxel de una imagen, permitiendo la identificación precisa de diferentes tipos de cobertura terrestre como agua, bosques y áreas urbanas. Este nivel de detalle es esencial para aplicaciones como la gestión ambiental, la planificación urbana y la agricultura de precisión. Por ejemplo, Prithvi ha demostrado ser efectivo en tareas de segmentación multitemporal, aprovechando datos multiespectrales para mapear dinámicamente cambios en el uso de la tierra. De manera similar, SatMAE++ utiliza enfoques avanzados de auto-codificación para mejorar la segmentación en imágenes con variabilidad de escalas, logrando una alta precisión incluso en escenarios complejos (Jakubik et al. 2023), (Xiao et al. 2024).\n\n\n1.6.3 Detección de Objetos\nLa detección de objetos es un proceso en el cual se identifican y localizan entidades específicas dentro de imágenes satelitales, como edificios, vehículos o embarcaciones. Este enfoque es fundamental para aplicaciones como el monitoreo urbano, la gestión de desastres y la supervisión de infraestructuras críticas. Por ejemplo, RingMo utiliza enfoques avanzados de aprendizaje multimodal para mejorar la detección en imágenes multiespectrales y multitemporales. Por otro lado, SkySense combina datos ópticos y SAR para abordar desafíos relacionados con variaciones ambientales y características espectrales complejas, proporcionando una mayor robustez y precisión en tareas de detección (Xiao et al. 2024), (Lu et al. 2024)\n\n\n1.6.4 Detección de Cambios\nLa detección de cambios implica el uso de imágenes multitemporales para identificar y analizar alteraciones en la superficie terrestre a lo largo del tiempo. Este proceso es fundamental para aplicaciones como el monitoreo de deforestación, expansiones urbanas y desastres naturales. Modelos como GeoChange y ChangeSTAR se utilizan para procesar grandes volúmenes de datos satelitales, integrando algoritmos que permiten una comparación precisa entre diferentes momentos temporales, destacando incluso los cambios más sutiles ((Jakubik et al. 2023), (Xiao et al. 2024)).\n\n\n1.6.5 Imputación de Nubes\nEl proceso de imputación de nubes, conocido como cloud gap filling, se refiere a la tarea de reconstruir áreas de datos faltantes en imágenes satelitales debido a la presencia de nubes. Este problema es crítico para garantizar la continuidad espacial y temporal de los datos en aplicaciones como el monitoreo de cultivos o el análisis ambiental. Por ejemplo, Prithvi emplea algoritmos basados en modelos fundacionales para rellenar estos vacíos de manera precisa, utilizando datos multiespectrales y multitemporales como referencia contextual, lo que mejora significativamente la calidad de las observaciones satelitales (Xiao et al. 2024).",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#desafíos-y-oportunidades",
+    "href": "intro.html#desafíos-y-oportunidades",
+    "title": "1  Introduction",
+    "section": "1.7 Desafíos y Oportunidades",
+    "text": "1.7 Desafíos y Oportunidades\n\n1.7.1 Desafíos\n\nEscasez de datos etiquetados para pre-entrenamiento.\nCostos computacionales: entrenamiento en grandes volúmenes de datos.\nGeneralización limitada en dominios multiespectrales y multimodales.\n\n\n\n1.7.2 Oportunidades\n\nIntegración de modelos multimodales (e.g., VLMs para texto-imagen).\nAvances en transferencia de conocimiento entre dominios geoespaciales.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#referencias",
+    "href": "intro.html#referencias",
+    "title": "1  Introduction",
+    "section": "1.8 Referencias",
+    "text": "1.8 Referencias\nJakubik et al., “Foundation Models for Generalist Geospatial AI”, 2023.\nXiao et al., “Foundation Models for Remote Sensing and Earth Observation: A Survey”, 2024.\nLu et al., “AI Foundation Models in Remote Sensing: A Survey”, 2024. Otros artículos relevantes. -\n\n\n\n\nJakubik, Johannes, Sujit Roy, C. E. Phillips, Paolo Fraccaro, Denys Godwin, Bianca Zadrozny, Daniela Szwarcman, et al. 2023. “Foundation Models for Generalist Geospatial Artificial Intelligence.” https://doi.org/10.48550/arXiv.2310.18660.\n\n\nLu, Siqi, Junlin Guo, James R. Zimmer-Dauphinee, Jordan M. Nieusma, Xiao Wang, Parker VanValkenburgh, Steven A. Wernke, and Yuankai Huo. 2024. “AI Foundation Models in Remote Sensing: A Survey.” https://doi.org/10.48550/arXiv.2408.03464.\n\n\nXiao, Aoran, Weihao Xuan, Junjue Wang, Jiaxing Huang, Dacheng Tao, Shijian Lu, and Naoto Yokoya. 2024. “Foundation Models for Remote Sensing and Earth Observation: A Survey.” https://doi.org/10.48550/arXiv.2410.16602.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "papers_review.html",
+    "href": "papers_review.html",
+    "title": "2  Papers Review",
+    "section": "",
+    "text": "2.1 Remote Sensing Vision Foundation Models",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Papers Review</span>"
+    ]
+  },
+  {
+    "objectID": "papers_review.html#remote-sensing-vision-foundation-models",
+    "href": "papers_review.html#remote-sensing-vision-foundation-models",
+    "title": "2  Papers Review",
+    "section": "",
+    "text": "Abbreviation\nTitle\nPublication\nPaper\nCode & Weights\n\n\n\n\nGeoKR\nGeographical Knowledge-Driven Representation Learning for Remote Sensing Images\nTGRS2021\nGeoKR\nlink\n\n\n-\nSelf-Supervised Learning of Remote Sensing Scene Representations Using Contrastive Multiview Coding\nCVPRW2021\nPaper\nlink\n\n\nGASSL\nGeography-Aware Self-Supervised Learning\nICCV2021\nGASSL\nlink\n\n\nSeCo\nSeasonal Contrast: Unsupervised Pre-Training From Uncurated Remote Sensing Data\nICCV2021\nSeCo\nlink\n\n\nDINO-MM\nSelf-supervised Vision Transformers for Joint SAR-optical Representation Learning\nIGARSS2022\nDINO-MM\nlink\n\n\nSatMAE\nSatMAE: Pre-training Transformers for Temporal and Multi-Spectral Satellite Imagery\nNeurIPS2022\nSatMAE\nlink\n\n\nRS-BYOL\nSelf-Supervised Learning for Invariant Representations From Multi-Spectral and SAR Images\nJSTARS2022\nRS-BYOL\nnull\n\n\nGeCo\nGeographical Supervision Correction for Remote Sensing Representation Learning\nTGRS2022\nGeCo\nnull\n\n\nRingMo\nRingMo: A remote sensing foundation model with masked image modeling\nTGRS2022\nRingMo\nCode\n\n\nRVSA\nAdvancing plain vision transformer toward remote sensing foundation model\nTGRS2022\nRVSA\nlink\n\n\nRSP\nAn Empirical Study of Remote Sensing Pretraining\nTGRS2022\nRSP\nlink\n\n\nMATTER\nSelf-Supervised Material and Texture Representation Learning for Remote Sensing Tasks\nCVPR2022\nMATTER\nnull\n\n\nCSPT\nConsecutive Pre-Training: A Knowledge Transfer Learning Strategy with Relevant Unlabeled Data for Remote Sensing Domain\nRS2022\nCSPT\nlink\n\n\n-\nSelf-supervised Vision Transformers for Land-cover Segmentation and Classification\nCVPRW2022\nPaper\nlink\n\n\nBFM\nA billion-scale foundation model for remote sensing images\nArxiv2023\nBFM\nnull\n\n\nTOV\nTOV: The original vision model for optical remote sensing image understanding via self-supervised learning\nJSTARS2023\nTOV\nlink\n\n\nCMID\nCMID: A Unified Self-Supervised Learning Framework for Remote Sensing Image Understanding\nTGRS2023\nCMID\nlink\n\n\nRingMo-Sense\nRingMo-Sense: Remote Sensing Foundation Model for Spatiotemporal Prediction via Spatiotemporal Evolution Disentangling\nTGRS2023\nRingMo-Sense\nnull\n\n\nIaI-SimCLR\nMulti-Modal Multi-Objective Contrastive Learning for Sentinel-1/2 Imagery\nCVPRW2023\nIaI-SimCLR\nnull\n\n\nCACo\nChange-Aware Sampling and Contrastive Learning for Satellite Images\nCVPR2023\nCACo\nlink\n\n\nSatLas\nSatlasPretrain: A Large-Scale Dataset for Remote Sensing Image Understanding\nICCV2023\nSatLas\nlink\n\n\nGFM\nTowards Geospatial Foundation Models via Continual Pretraining\nICCV2023\nGFM\nlink\n\n\nScale-MAE\nScale-MAE: A Scale-Aware Masked Autoencoder for Multiscale Geospatial Representation Learning\nICCV2023\nScale-MAE\nlink\n\n\nDINO-MC\nDINO-MC: Self-supervised Contrastive Learning for Remote Sensing Imagery with Multi-sized Local Crops\nArxiv2023\nDINO-MC\nlink\n\n\nCROMA\nCROMA: Remote Sensing Representations with Contrastive Radar-Optical Masked Autoencoders\nNeurIPS2023\nCROMA\nlink\n\n\nCross-Scale MAE\nCross-Scale MAE: A Tale of Multiscale Exploitation in Remote Sensing\nNeurIPS2023\nCross-Scale MAE\nlink\n\n\nDeCUR\nDeCUR: decoupling common & unique representations for multimodal self-supervision\nECCV2024\nDeCUR\nlink\n\n\nPresto\nLightweight, Pre-trained Transformers for Remote Sensing Timeseries\nArxiv2023\nPresto\nlink\n\n\nCtxMIM\nCtxMIM: Context-Enhanced Masked Image Modeling for Remote Sensing Image Understanding\nArxiv2023\nCtxMIM\nnull\n\n\nFG-MAE\nFeature Guided Masked Autoencoder for Self-supervised Learning in Remote Sensing\nArxiv2023\nFG-MAE\nlink\n\n\nPrithvi\nFoundation Models for Generalist Geospatial Artificial Intelligence\nArxiv2023\nPrithvi\nlink\n\n\nRingMo-lite\nRingMo-lite: A Remote Sensing Multi-task Lightweight Network with CNN-Transformer Hybrid Framework\nArxiv2023\nRingMo-lite\nnull\n\n\n-\nA Self-Supervised Cross-Modal Remote Sensing Foundation Model with Multi-Domain Representation and Cross-Domain Fusion\nIGARSS2023\nPaper\nnull\n\n\nEarthPT\nEarthPT: a foundation model for Earth Observation\nNeurIPS2023 CCAI workshop\nEarthPT\nlink\n\n\nUSat\nUSat: A Unified Self-Supervised Encoder for Multi-Sensor Satellite Imagery\nArxiv2023\nUSat\nlink\n\n\nFoMo-Bench\nFoMo-Bench: a multi-modal, multi-scale and multi-task Forest Monitoring Benchmark for remote sensing foundation models\nArxiv2023\nFoMo-Bench\nlink\n\n\nAIEarth\nAnalytical Insight of Earth: A Cloud-Platform of Intelligent Computing for Geospatial Big Data\nArxiv2023\nAIEarth\nlink\n\n\n-\nSelf-Supervised Learning for SAR ATR with a Knowledge-Guided Predictive Architecture\nArxiv2023\nPaper\nlink\n\n\nClay\nClay Foundation Model\n-\nnull\nlink\n\n\nHydro\n****Hydro–A Foundation Model for Water in Satellite Imagery****\n-\nnull\nlink\n\n\nU-BARN\nSelf-Supervised Spatio-Temporal Representation Learning of Satellite Image Time Series\nJSTARS2024\nPaper\nlink\n\n\nGeRSP\nGeneric Knowledge Boosted Pre-training For Remote Sensing Images\nArxiv2024\nGeRSP\nGeRSP\n\n\nSwiMDiff\nSwiMDiff: Scene-wide Matching Contrastive Learning with Diffusion Constraint for Remote Sensing Image\nArxiv2024\nSwiMDiff\nnull\n\n\nOFA-Net\nOne for All: Toward Unified Foundation Models for Earth Vision\nArxiv2024\nOFA-Net\nnull\n\n\nSMLFR\nGenerative ConvNet Foundation Model With Sparse Modeling and Low-Frequency Reconstruction for Remote Sensing Image Interpretation\nTGRS2024\nSMLFR\nlink\n\n\nSpectralGPT\nSpectralGPT: Spectral Foundation Model\nTPAMI2024\nSpectralGPT\nlink\n\n\nS2MAE\nS2MAE: A Spatial-Spectral Pretraining Foundation Model for Spectral Remote Sensing Data\nCVPR2024\nS2MAE\nnull\n\n\nSatMAE++\nRethinking Transformers Pre-training for Multi-Spectral Satellite Imagery\nCVPR2024\nSatMAE++\nlink\n\n\nmsGFM\nBridging Remote Sensors with Multisensor Geospatial Foundation Models\nCVPR2024\nmsGFM\nlink\n\n\nSkySense\nSkySense: A Multi-Modal Remote Sensing Foundation Model Towards Universal Interpretation for Earth Observation Imagery\nCVPR2024\nSkySense\nTargeted open-source\n\n\nMTP\nMTP: Advancing Remote Sensing Foundation Model via Multi-Task Pretraining\nArxiv2024\nMTP\nlink\n\n\nDOFA\nNeural Plasticity-Inspired Foundation Model for Observing the Earth Crossing Modalities\nArxiv2024\nDOFA\nlink\n\n\nMMEarth\nMMEarth: Exploring Multi-Modal Pretext Tasks For Geospatial Representation Learning\nECCV2024\nMMEarth\nlink\n\n\nSARATR-X\nSARATR-X: A Foundation Model for Synthetic Aperture Radar Images Target Recognition\nArxiv2024\nSARATR-X\nlink\n\n\nLeMeViT\nLeMeViT: Efficient Vision Transformer with Learnable Meta Tokens for Remote Sensing Image Interpretation\nIJCAI2024\nLeMeViT\nlink\n\n\nSoftCon\nMulti-Label Guided Soft Contrastive Learning for Efficient Earth Observation Pretraining\nArxiv2024\nSoftCon\nlink\n\n\nRS-DFM\nRS-DFM: A Remote Sensing Distributed Foundation Model for Diverse Downstream Tasks\nArxiv2024\nRS-DFM\nnull\n\n\nA2-MAE\nA2-MAE: A spatial-temporal-spectral unified remote sensing pre-training method based on anchor-aware masked autoencoder\nArxiv2024\nA2-MAE\nnull\n\n\nHyperSIGMA\nHyperSIGMA: Hyperspectral Intelligence Comprehension Foundation Model\nArxiv2024\nHyperSIGMA\nlink\n\n\nSelectiveMAE\nScaling Efficient Masked Autoencoder Learning on Large Remote Sensing Dataset\nArxiv2024\nSelectiveMAE\nlink\n\n\nOmniSat\nOmniSat: Self-Supervised Modality Fusion for Earth Observation\nECCV2024\nOmniSat\nlink\n\n\nMM-VSF\nTowards a Knowledge guided Multimodal Foundation Model for Spatio-Temporal Remote Sensing Applications\nArxiv2024\nMM-VSF\nnull\n\n\nMA3E\nMasked Angle-Aware Autoencoder for Remote Sensing Images\nECCV2024\nMA3E\nlink\n\n\nSpectralEarth\nSpectralEarth: Training Hyperspectral Foundation Models at Scale\nArxiv2024\nSpectralEarth\nnull\n\n\nSenPa-MAE\nSenPa-MAE: Sensor Parameter Aware Masked Autoencoder for Multi-Satellite Self-Supervised Pretraining\nArxiv2024\nSenPa-MAE\nlink\n\n\nRingMo-Aerial\nRingMo-Aerial: An Aerial Remote Sensing Foundation Model With A Affine Transformation Contrastive Learning\nArxiv2024\nRingMo-Aerial\nnull\n\n\nSAR-JEPA\nPredicting Gradient is Better: Exploring Self-Supervised Learning for SAR ATR with a Joint-Embedding Predictive Architecture\nISPRS JPRS2024\nSAR-JEPA\nlink\n\n\nPIS\nPretrain a Remote Sensing Foundation Model by Promoting Intra-instance Similarity\nTGRS2024\nPIS\nlink\n\n\nOReole-FM\nOReole-FM: successes and challenges toward billion-parameter foundation models for high-resolution satellite imagery\nSIGSPATIAL2024\nOReole-FM\nnull\n\n\nPIEViT\nPattern Integration and Enhancement Vision Transformer for Self-supervised Learning in Remote Sensing\nArxiv2024\nPIEViT\nnull\n\n\nSatVision-TOA\nSatVision-TOA: A Geospatial Foundation Model for Coarse-Resolution All-Sky Remote Sensing Imagery\nArxiv2024\nSatVision-TOA\nlink\n\n\nRS-vHeat\nRS-vHeat: Heat Conduction Guided Efficient Remote Sensing Foundation Model\nArxiv2024\nRS-vHeat\nnull\n\n\nPrithvi-EO-2.0\nPrithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications\nArxiv2024\nPrithvi-EO-2.0\nlink\n\n\nAnySat\nAnySat: An Earth Observation Model for Any Resolutions, Scales, and Modalities\nArxiv2024\nAnySat\nlink",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Papers Review</span>"
+    ]
+  },
+  {
+    "objectID": "papers_review.html#remote-sensing-vision-language-foundation-models",
+    "href": "papers_review.html#remote-sensing-vision-language-foundation-models",
+    "title": "2  Papers Review",
+    "section": "2.2 Remote Sensing Vision-Language Foundation Models",
+    "text": "2.2 Remote Sensing Vision-Language Foundation Models\n\n\n\nAbbreviation\nTitle\nPublication\nPaper\nCode & Weights\n\n\n\n\nRSGPT\nRSGPT: A Remote Sensing Vision Language Model and Benchmark\nArxiv2023\nRSGPT\nlink\n\n\nRemoteCLIP\nRemoteCLIP: A Vision Language Foundation Model for Remote Sensing\nArxiv2023\nRemoteCLIP\nlink\n\n\nGeoRSCLIP\nRS5M: A Large Scale Vision-Language Dataset for Remote Sensing Vision-Language Foundation Model\nArxiv2023\nGeoRSCLIP\nlink\n\n\nGRAFT\nRemote Sensing Vision-Language Foundation Models without Annotations via Ground Remote Alignment\nICLR2024\nGRAFT\nnull\n\n\n-\nCharting New Territories: Exploring the Geographic and Geospatial Capabilities of Multimodal LLMs\nArxiv2023\nPaper\nlink\n\n\n-\nRemote Sensing ChatGPT: Solving Remote Sensing Tasks with ChatGPT and Visual Models\nArxiv2024\nPaper\nlink\n\n\nSkyEyeGPT\nSkyEyeGPT: Unifying Remote Sensing Vision-Language Tasks via Instruction Tuning with Large Language Model\nArxiv2024\nPaper\nlink\n\n\nEarthGPT\nEarthGPT: A Universal Multi-modal Large Language Model for Multi-sensor Image Comprehension in Remote Sensing Domain\nArxiv2024\nPaper\nnull\n\n\nSkyCLIP\nSkyScript: A Large and Semantically Diverse Vision-Language Dataset for Remote Sensing\nAAAI2024\nSkyCLIP\nlink\n\n\nGeoChat\nGeoChat: Grounded Large Vision-Language Model for Remote Sensing\nCVPR2024\nGeoChat\nlink\n\n\nLHRS-Bot\nLHRS-Bot: Empowering Remote Sensing with VGI-Enhanced Large Multimodal Language Model\nArxiv2024\nPaper\nlink\n\n\nH2RSVLM\nH2RSVLM: Towards Helpful and Honest Remote Sensing Large Vision Language Model\nArxiv2024\nPaper\nlink\n\n\nRS-LLaVA\nRS-LLaVA: Large Vision Language Model for Joint Captioning and Question Answering in Remote Sensing Imagery\nRS2024\nPaper\nlink\n\n\nSkySenseGPT\nSkySenseGPT: A Fine-Grained Instruction Tuning Dataset and Model for Remote Sensing Vision-Language Understanding\nArxiv2024\nPaper\nlink\n\n\nEarthMarker\nEarthMarker: Visual Prompt Learning for Region-level and Point-level Remote Sensing Imagery Comprehension\nArxiv2024\nPaper\nlink\n\n\nGeoText\nTowards Natural Language-Guided Drones: GeoText-1652 Benchmark with Spatial Relation Matching\nECCV2024\nPaper\nlink\n\n\nTEOChat\nTEOChat: Large Language and Vision Assistant for Temporal Earth Observation Data\nArxiv2024\nPaper\nlink\n\n\nAquila\nAquila: A Hierarchically Aligned Visual-Language Model for Enhanced Remote Sensing Image Comprehension\nArxiv2024\nPaper\nnull\n\n\nLHRS-Bot-Nova\nLHRS-Bot-Nova: Improved Multimodal Large Language Model for Remote Sensing Vision-Language Interpretation\nArxiv2024\nPaper\nlink\n\n\nRSCLIP\nPushing the Limits of Vision-Language Models in Remote Sensing without Human Annotations\nArxiv2024\nPaper\nnull\n\n\nRingMoGPT\nRingMoGPT: A Unified Remote Sensing Foundation Model for Vision, Language, and grounded tasks\nTGRS2024\nPaper\nnull\n\n\nRSUniVLM\nRSUniVLM: A Unified Vision Language Model for Remote Sensing via Granularity-oriented Mixture of Experts\nArxiv2024\nPaper\nlink\n\n\nEarthDial\nEarthDial: Turning Multi-sensory Earth Observations to Interactive Dialogues\nArxiv2024\nPaper\nnull",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Papers Review</span>"
+    ]
+  }
+]
