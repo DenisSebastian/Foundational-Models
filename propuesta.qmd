@@ -1,0 +1,26 @@
+---
+title: "Propuesta"
+---
+
+## Temática: 
+
+Vision Foundamential Models
+
+## Chapters:
+
+### Change Detection
+- Turberas (SAM)
+- Incendios Forestales
+
+### Land Cover Classification
+-  Capital Natural
+
+
+### Segmetation
+
+- Edificaciones
+
+
+## Implementación 
+
+- Data Cube Chile

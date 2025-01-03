@@ -12,7 +12,9 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - papers_review.qmd
+    - papers_review_vfm.qmd
+    # - papers_review_vlm.qmd
+    - propuesta.qmd
     # - multiagente.qmd
     # - sql.qmd
     # - rag.qmd

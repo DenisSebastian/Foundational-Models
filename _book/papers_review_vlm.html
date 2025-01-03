@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>References – Modelos Fundacionales de IA</title>
+<title>3&nbsp; Papers Review: VLM – Modelos Fundacionales de IA</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./papers_review.html" rel="prev">
+<link href="./propuesta.html" rel="next">
+<link href="./papers_review_vfm.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -100,7 +82,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">References</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./papers_review_vlm.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Papers Review: VLM</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -139,13 +121,25 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./papers_review.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Papers Review</span></span></a>
+  <a href="./papers_review_vfm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Papers Review: VFM</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./papers_review_vlm.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Papers Review: VLM</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./propuesta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Propuesta</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -154,15 +148,41 @@ div.csl-indent {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción"><span class="header-section-number">3.1</span> Introducción</a>
+  <ul class="collapse">
+  <li><a href="#contexto-general" id="toc-contexto-general" class="nav-link" data-scroll-target="#contexto-general"><span class="header-section-number">3.1.1</span> Contexto general</a></li>
+  <li><a href="#objetivos-de-la-revisión" id="toc-objetivos-de-la-revisión" class="nav-link" data-scroll-target="#objetivos-de-la-revisión"><span class="header-section-number">3.1.2</span> Objetivos de la revisión</a></li>
+  </ul></li>
+  <li><a href="#metodología" id="toc-metodología" class="nav-link" data-scroll-target="#metodología"><span class="header-section-number">3.2</span> Metodología</a></li>
+  <li><a href="#marco-conceptual" id="toc-marco-conceptual" class="nav-link" data-scroll-target="#marco-conceptual"><span class="header-section-number">3.3</span> Marco Conceptual</a></li>
+  <li><a href="#revisión-de-los-estudios" id="toc-revisión-de-los-estudios" class="nav-link" data-scroll-target="#revisión-de-los-estudios"><span class="header-section-number">3.4</span> Revisión de los Estudios</a></li>
+  <li><a href="#discusión" id="toc-discusión" class="nav-link" data-scroll-target="#discusión"><span class="header-section-number">3.5</span> Discusión</a>
+  <ul class="collapse">
+  <li><a href="#análisis-comparativo" id="toc-análisis-comparativo" class="nav-link" data-scroll-target="#análisis-comparativo"><span class="header-section-number">3.5.1</span> Análisis comparativo</a></li>
+  <li><a href="#brechas-en-la-literatura" id="toc-brechas-en-la-literatura" class="nav-link" data-scroll-target="#brechas-en-la-literatura"><span class="header-section-number">3.5.2</span> Brechas en la literatura</a></li>
+  <li><a href="#implicaciones-para-tu-investigación" id="toc-implicaciones-para-tu-investigación" class="nav-link" data-scroll-target="#implicaciones-para-tu-investigación"><span class="header-section-number">3.5.3</span> Implicaciones para tu investigación</a></li>
+  </ul></li>
+  <li><a href="#conclusión-y-propuesta" id="toc-conclusión-y-propuesta" class="nav-link" data-scroll-target="#conclusión-y-propuesta"><span class="header-section-number">3.6</span> Conclusión y Propuesta</a>
+  <ul class="collapse">
+  <li><a href="#conclusión-de-la-revisión" id="toc-conclusión-de-la-revisión" class="nav-link" data-scroll-target="#conclusión-de-la-revisión"><span class="header-section-number">3.6.1</span> Conclusión de la revisión</a></li>
+  <li><a href="#propuesta-de-tesis" id="toc-propuesta-de-tesis" class="nav-link" data-scroll-target="#propuesta-de-tesis"><span class="header-section-number">3.6.2</span> Propuesta de tesis</a></li>
+  </ul></li>
+  <li><a href="#base-general" id="toc-base-general" class="nav-link" data-scroll-target="#base-general"><span class="header-section-number">3.7</span> Base General</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">References</h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Papers Review: VLM</span></h1>
+<p class="subtitle lead">Avances recientes en modelos de Lenguaje en percepción remota</p>
 </div>
 
 
@@ -179,26 +199,269 @@ div.csl-indent {
 </header>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-jakubik" class="csl-entry" role="listitem">
-Jakubik, Johannes, Sujit Roy, C. E. Phillips, Paolo Fraccaro, Denys
-Godwin, Bianca Zadrozny, Daniela Szwarcman, et al. 2023.
-<span>“Foundation Models for Generalist Geospatial Artificial
-Intelligence.”</span> <a href="https://doi.org/10.48550/arXiv.2310.18660">https://doi.org/10.48550/arXiv.2310.18660</a>.
-</div>
-<div id="ref-lu" class="csl-entry" role="listitem">
-Lu, Siqi, Junlin Guo, James R. Zimmer-Dauphinee, Jordan M. Nieusma, Xiao
-Wang, Parker VanValkenburgh, Steven A. Wernke, and Yuankai Huo. 2024.
-<span>“AI Foundation Models in Remote Sensing: A Survey.”</span> <a href="https://doi.org/10.48550/arXiv.2408.03464">https://doi.org/10.48550/arXiv.2408.03464</a>.
-</div>
-<div id="ref-xiao" class="csl-entry" role="listitem">
-Xiao, Aoran, Weihao Xuan, Junjue Wang, Jiaxing Huang, Dacheng Tao,
-Shijian Lu, and Naoto Yokoya. 2024. <span>“Foundation Models for Remote
-Sensing and Earth Observation: A Survey.”</span> <a href="https://doi.org/10.48550/arXiv.2410.16602">https://doi.org/10.48550/arXiv.2410.16602</a>.
-</div>
-</div>
+<section id="introducción" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="introducción"><span class="header-section-number">3.1</span> Introducción</h2>
+<section id="contexto-general" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="contexto-general"><span class="header-section-number">3.1.1</span> Contexto general</h3>
+<ul>
+<li>Breve descripción del tema de investigación.</li>
+<li>Importancia del tema en la teledetección o campo de aplicación.</li>
+</ul>
+</section>
+<section id="objetivos-de-la-revisión" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="objetivos-de-la-revisión"><span class="header-section-number">3.1.2</span> Objetivos de la revisión</h3>
+<ul>
+<li>Propósito de esta revisión bibliográfica (e.g., establecer bases para la propuesta de tesis).</li>
+</ul>
+</section>
+</section>
+<section id="metodología" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="metodología"><span class="header-section-number">3.2</span> Metodología</h2>
+<ul>
+<li>Descripción del enfoque adoptado para seleccionar los estudios incluidos.</li>
+<li>Criterios de inclusión (e.g., modelos recientes, impacto en el campo).</li>
+<li>Bases de datos utilizadas (e.g., arXiv, IEEE Xplore).</li>
+<li>Breve introducción al enfoque de análisis empleado para comparar los artículos.</li>
+</ul>
+</section>
+<section id="marco-conceptual" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="marco-conceptual"><span class="header-section-number">3.3</span> Marco Conceptual</h2>
+<ul>
+<li>Explicación de conceptos clave relevantes a los estudios revisados (e.g., aprendizaje autosupervisado, segmentación semántica, arquitecturas transformer).</li>
+<li>Mapa conceptual o esquema de relaciones entre estos conceptos.</li>
+</ul>
+</section>
+<section id="revisión-de-los-estudios" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="revisión-de-los-estudios"><span class="header-section-number">3.4</span> Revisión de los Estudios</h2>
+<p>Para cada estudio, incluir las siguientes subsecciones:</p>
+<ul>
+<li>[Título del Estudio] Referencia completa: Autores, título, publicación, año.</li>
+<li>Objetivo del estudio: ¿Qué problema aborda el artículo?</li>
+<li>Métodos utilizados: Arquitecturas, datasets, técnicas de preentrenamiento.</li>
+<li>Resultados principales: Métricas, tareas downstream, ventajas frente a otros enfoques.</li>
+<li>Limitaciones identificadas: Críticas o desafíos no resueltos.</li>
+<li>Relación con otros estudios: Comparación o integración con investigaciones similares.</li>
+</ul>
+<p><em>Nota: Usa tablas o gráficos para resumir comparaciones clave, como métricas de rendimiento en tareas downstream.</em></p>
+</section>
+<section id="discusión" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="discusión"><span class="header-section-number">3.5</span> Discusión</h2>
+<section id="análisis-comparativo" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="análisis-comparativo"><span class="header-section-number">3.5.1</span> Análisis comparativo</h3>
+<ul>
+<li>Comparar las fortalezas y debilidades de los estudios analizados.</li>
+<li>Identificación de patrones comunes en resultados o enfoques.</li>
+</ul>
+</section>
+<section id="brechas-en-la-literatura" class="level3" data-number="3.5.2">
+<h3 data-number="3.5.2" class="anchored" data-anchor-id="brechas-en-la-literatura"><span class="header-section-number">3.5.2</span> Brechas en la literatura</h3>
+<ul>
+<li>Identificar áreas no exploradas o que requieren mayor desarrollo.</li>
+</ul>
+</section>
+<section id="implicaciones-para-tu-investigación" class="level3" data-number="3.5.3">
+<h3 data-number="3.5.3" class="anchored" data-anchor-id="implicaciones-para-tu-investigación"><span class="header-section-number">3.5.3</span> Implicaciones para tu investigación</h3>
+<ul>
+<li>Cómo los resultados revisados fundamentan tu propuesta de tesis.</li>
+<li>Adaptaciones o mejoras sugeridas para futuros trabajos.</li>
+</ul>
+</section>
+</section>
+<section id="conclusión-y-propuesta" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="conclusión-y-propuesta"><span class="header-section-number">3.6</span> Conclusión y Propuesta</h2>
+<section id="conclusión-de-la-revisión" class="level3" data-number="3.6.1">
+<h3 data-number="3.6.1" class="anchored" data-anchor-id="conclusión-de-la-revisión"><span class="header-section-number">3.6.1</span> Conclusión de la revisión</h3>
+<ul>
+<li>Síntesis de los hallazgos más importantes.</li>
+</ul>
+</section>
+<section id="propuesta-de-tesis" class="level3" data-number="3.6.2">
+<h3 data-number="3.6.2" class="anchored" data-anchor-id="propuesta-de-tesis"><span class="header-section-number">3.6.2</span> Propuesta de tesis</h3>
+<ul>
+<li>Presentar la pregunta o hipótesis principal.</li>
+<li>Breve descripción del enfoque metodológico y su relación con la revisión.</li>
+</ul>
+</section>
+</section>
+<section id="base-general" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="base-general"><span class="header-section-number">3.7</span> Base General</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Abbreviation</th>
+<th>Title</th>
+<th style="text-align: center;">Publication</th>
+<th style="text-align: center;">Paper</th>
+<th style="text-align: center;">Code &amp; Weights</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>RSGPT</strong></td>
+<td><strong>RSGPT: A Remote Sensing Vision Language Model and Benchmark</strong></td>
+<td style="text-align: center;">Arxiv2023</td>
+<td style="text-align: center;"><a href="https://arxiv.org/abs/2307.15266">RSGPT</a></td>
+<td style="text-align: center;"><a href="https://github.com/Lavender105/RSGPT">link</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>RemoteCLIP</strong></td>
+<td><strong>RemoteCLIP: A Vision Language Foundation Model for Remote Sensing</strong></td>
+<td style="text-align: center;">Arxiv2023</td>
+<td style="text-align: center;"><a href="https://arxiv.org/abs/2306.11029">RemoteCLIP</a></td>
+<td style="text-align: center;"><a href="https://github.com/ChenDelong1999/RemoteCLIP">link</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>GeoRSCLIP</strong></td>
+<td><strong>RS5M: A Large Scale Vision-Language Dataset for Remote Sensing Vision-Language Foundation Model</strong></td>
+<td style="text-align: center;">Arxiv2023</td>
+<td style="text-align: center;"><a href="https://arxiv.org/abs/2306.11300">GeoRSCLIP</a></td>
+<td style="text-align: center;"><a href="https://github.com/om-ai-lab/RS5M?tab=readme-ov-file">link</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>GRAFT</strong></td>
+<td><strong>Remote Sensing Vision-Language Foundation Models without Annotations via Ground Remote Alignment</strong></td>
+<td style="text-align: center;">ICLR2024</td>
+<td style="text-align: center;"><a href="https://openreview.net/pdf?id=w9tc699w3Z">GRAFT</a></td>
+<td style="text-align: center;">null</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>-</strong></td>
+<td><strong>Charting New Territories: Exploring the Geographic and Geospatial Capabilities of Multimodal LLMs</strong></td>
+<td style="text-align: center;">Arxiv2023</td>
+<td style="text-align: center;"><a href="https://arxiv.org/abs/2311.14656">Paper</a></td>
+<td style="text-align: center;"><a href="https://github.com/jonathan-roberts1/charting-new-territories">link</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>-</strong></td>
+<td><strong>Remote Sensing ChatGPT: Solving Remote Sensing Tasks with ChatGPT and Visual Models</strong></td>
+<td style="text-align: center;">Arxiv2024</td>
+<td style="text-align: center;"><a href="https://arxiv.org/abs/2401.09083">Paper</a></td>
+<td style="text-align: center;"><a href="https://github.com/HaonanGuo/Remote-Sensing-ChatGPT">link</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>SkyEyeGPT</strong></td>
+<td><strong>SkyEyeGPT: Unifying Remote Sensing Vision-Language Tasks via Instruction Tuning with Large Language Model</strong></td>
+<td style="text-align: center;">Arxiv2024</td>
+<td style="text-align: center;"><a href="https://arxiv.org/abs/2401.09712">Paper</a></td>
+<td style="text-align: center;"><a href="https://github.com/ZhanYang-nwpu/SkyEyeGPT">link</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>EarthGPT</strong></td>
+<td><strong>EarthGPT: A Universal Multi-modal Large Language Model for Multi-sensor Image Comprehension in Remote Sensing Domain</strong></td>
+<td style="text-align: center;">Arxiv2024</td>
+<td style="text-align: center;"><a href="https://arxiv.org/abs/2401.16822">Paper</a></td>
+<td style="text-align: center;">null</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>SkyCLIP</strong></td>
+<td><strong>SkyScript: A Large and Semantically Diverse Vision-Language Dataset for Remote Sensing</strong></td>
+<td style="text-align: center;">AAAI2024</td>
+<td style="text-align: center;"><a href="https://arxiv.org/abs/2312.12856">SkyCLIP</a></td>
+<td style="text-align: center;"><a href="https://github.com/wangzhecheng/SkyScript">link</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>GeoChat</strong></td>
+<td><strong>GeoChat: Grounded Large Vision-Language Model for Remote Sensing</strong></td>
+<td style="text-align: center;">CVPR2024</td>
+<td style="text-align: center;"><a href="https://arxiv.org/abs/2311.15826">GeoChat</a></td>
+<td style="text-align: center;"><a href="https://github.com/mbzuai-oryx/GeoChat">link</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>LHRS-Bot</strong></td>
+<td><strong>LHRS-Bot: Empowering Remote Sensing with VGI-Enhanced Large Multimodal Language Model</strong></td>
+<td style="text-align: center;">Arxiv2024</td>
+<td style="text-align: center;"><a href="https://arxiv.org/abs/2402.02544">Paper</a></td>
+<td style="text-align: center;"><a href="https://github.com/NJU-LHRS/LHRS-Bot">link</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>H2RSVLM</strong></td>
+<td><strong>H2RSVLM: Towards Helpful and Honest Remote Sensing Large Vision Language Model</strong></td>
+<td style="text-align: center;">Arxiv2024</td>
+<td style="text-align: center;"><a href="https://arxiv.org/abs/2403.20213">Paper</a></td>
+<td style="text-align: center;"><a href="https://github.com/opendatalab/H2RSVLM">link</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>RS-LLaVA</strong></td>
+<td><strong>RS-LLaVA: Large Vision Language Model for Joint Captioning and Question Answering in Remote Sensing Imagery</strong></td>
+<td style="text-align: center;">RS2024</td>
+<td style="text-align: center;"><a href="https://www.mdpi.com/2072-4292/16/9/1477">Paper</a></td>
+<td style="text-align: center;"><a href="https://github.com/BigData-KSU/RS-LLaVA?tab=readme-ov-file">link</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>SkySenseGPT</strong></td>
+<td><strong>SkySenseGPT: A Fine-Grained Instruction Tuning Dataset and Model for Remote Sensing Vision-Language Understanding</strong></td>
+<td style="text-align: center;">Arxiv2024</td>
+<td style="text-align: center;"><a href="https://arxiv.org/abs/2406.10100">Paper</a></td>
+<td style="text-align: center;"><a href="https://github.com/Luo-Z13/SkySenseGPT">link</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>EarthMarker</strong></td>
+<td><strong>EarthMarker: Visual Prompt Learning for Region-level and Point-level Remote Sensing Imagery Comprehension</strong></td>
+<td style="text-align: center;">Arxiv2024</td>
+<td style="text-align: center;"><a href="https://arxiv.org/abs/2407.13596">Paper</a></td>
+<td style="text-align: center;"><a href="https://github.com/wivizhang/EarthMarker">link</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>GeoText</strong></td>
+<td><strong>Towards Natural Language-Guided Drones: GeoText-1652 Benchmark with Spatial Relation Matching</strong></td>
+<td style="text-align: center;">ECCV2024</td>
+<td style="text-align: center;"><a href="https://arxiv.org/abs/2311.12751">Paper</a></td>
+<td style="text-align: center;"><a href="https://multimodalgeo.github.io/GeoText/">link</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>TEOChat</strong></td>
+<td><strong>TEOChat: Large Language and Vision Assistant for Temporal Earth Observation Data</strong></td>
+<td style="text-align: center;">Arxiv2024</td>
+<td style="text-align: center;"><a href="https://arxiv.org/abs/2410.06234">Paper</a></td>
+<td style="text-align: center;"><a href="https://github.com/ermongroup/TEOChat">link</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Aquila</strong></td>
+<td><strong>Aquila: A Hierarchically Aligned Visual-Language Model for Enhanced Remote Sensing Image Comprehension</strong></td>
+<td style="text-align: center;">Arxiv2024</td>
+<td style="text-align: center;"><a href="https://arxiv.org/pdf/2411.06074">Paper</a></td>
+<td style="text-align: center;">null</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>LHRS-Bot-Nova</strong></td>
+<td><strong>LHRS-Bot-Nova: Improved Multimodal Large Language Model for Remote Sensing Vision-Language Interpretation</strong></td>
+<td style="text-align: center;">Arxiv2024</td>
+<td style="text-align: center;"><a href="https://arxiv.org/pdf/2411.09301">Paper</a></td>
+<td style="text-align: center;"><a href="https://github.com/NJU-LHRS/LHRS-Bot">link</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>RSCLIP</strong></td>
+<td><strong>Pushing the Limits of Vision-Language Models in Remote Sensing without Human Annotations</strong></td>
+<td style="text-align: center;">Arxiv2024</td>
+<td style="text-align: center;"><a href="https://arxiv.org/pdf/2409.07048">Paper</a></td>
+<td style="text-align: center;">null</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>RingMoGPT</strong></td>
+<td><strong>RingMoGPT: A Unified Remote Sensing Foundation Model for Vision, Language, and grounded tasks</strong></td>
+<td style="text-align: center;">TGRS2024</td>
+<td style="text-align: center;"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=10777289">Paper</a></td>
+<td style="text-align: center;">null</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>RSUniVLM</strong></td>
+<td><strong>RSUniVLM: A Unified Vision Language Model for Remote Sensing via Granularity-oriented Mixture of Experts</strong></td>
+<td style="text-align: center;">Arxiv2024</td>
+<td style="text-align: center;"><a href="https://arxiv.org/abs/2412.05679">Paper</a></td>
+<td style="text-align: center;"><a href="https://rsunivlm.github.io/">link</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>EarthDial</strong></td>
+<td><strong>EarthDial: Turning Multi-sensory Earth Observations to Interactive Dialogues</strong></td>
+<td style="text-align: center;">Arxiv2024</td>
+<td style="text-align: center;"><a href="https://arxiv.org/pdf/2412.15190#page=3.84">Paper</a></td>
+<td style="text-align: center;">null</td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -620,11 +883,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./papers_review.html" class="pagination-link" aria-label="Papers Review">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Papers Review</span></span>
+      <a href="./papers_review_vfm.html" class="pagination-link" aria-label="Papers Review: VFM">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Papers Review: VFM</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./propuesta.html" class="pagination-link" aria-label="Propuesta">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Propuesta</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

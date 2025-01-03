@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
+<link href="./propuesta.html" rel="next">
 <link href="./intro.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./papers_review.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Papers Review: VFM</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./papers_review_vfm.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Papers Review: VFM</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -121,8 +121,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./papers_review.html" class="sidebar-item-text sidebar-link active">
+  <a href="./papers_review_vfm.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Papers Review: VFM</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./propuesta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Propuesta</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -141,7 +147,39 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#remote-sensing-vision-language-foundation-models" id="toc-remote-sensing-vision-language-foundation-models" class="nav-link active" data-scroll-target="#remote-sensing-vision-language-foundation-models"><span class="header-section-number">2.1</span> Remote Sensing <ins>Vision-Language</ins> Foundation Models</a></li>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción"><span class="header-section-number">2.1</span> Introducción</a>
+  <ul class="collapse">
+  <li><a href="#contexto-general" id="toc-contexto-general" class="nav-link" data-scroll-target="#contexto-general"><span class="header-section-number">2.1.1</span> Contexto general</a></li>
+  <li><a href="#objetivos-de-la-revisión" id="toc-objetivos-de-la-revisión" class="nav-link" data-scroll-target="#objetivos-de-la-revisión"><span class="header-section-number">2.1.2</span> Objetivos de la revisión</a></li>
+  </ul></li>
+  <li><a href="#metodología" id="toc-metodología" class="nav-link" data-scroll-target="#metodología"><span class="header-section-number">2.2</span> Metodología</a>
+  <ul class="collapse">
+  <li><a href="#criterios-de-inclusión" id="toc-criterios-de-inclusión" class="nav-link" data-scroll-target="#criterios-de-inclusión"><span class="header-section-number">2.2.1</span> Criterios de Inclusión</a></li>
+  </ul></li>
+  <li><a href="#marco-conceptual" id="toc-marco-conceptual" class="nav-link" data-scroll-target="#marco-conceptual"><span class="header-section-number">2.3</span> Marco Conceptual</a>
+  <ul class="collapse">
+  <li><a href="#autoencoders-enmascarados-mae" id="toc-autoencoders-enmascarados-mae" class="nav-link" data-scroll-target="#autoencoders-enmascarados-mae"><span class="header-section-number">2.3.1</span> Autoencoders Enmascarados (MAE)</a></li>
+  <li><a href="#aprendizaje-contrastivo" id="toc-aprendizaje-contrastivo" class="nav-link" data-scroll-target="#aprendizaje-contrastivo"><span class="header-section-number">2.3.2</span> Aprendizaje Contrastivo</a></li>
+  <li><a href="#datos-multimodales-y-alineación-espacial" id="toc-datos-multimodales-y-alineación-espacial" class="nav-link" data-scroll-target="#datos-multimodales-y-alineación-espacial"><span class="header-section-number">2.3.3</span> Datos Multimodales y Alineación Espacial</a></li>
+  <li><a href="#codificación-de-posición-relativa-rpe" id="toc-codificación-de-posición-relativa-rpe" class="nav-link" data-scroll-target="#codificación-de-posición-relativa-rpe"><span class="header-section-number">2.3.4</span> Codificación de Posición Relativa (RPE)</a></li>
+  </ul></li>
+  <li><a href="#revisión-de-los-estudios" id="toc-revisión-de-los-estudios" class="nav-link" data-scroll-target="#revisión-de-los-estudios"><span class="header-section-number">2.4</span> Revisión de los Estudios</a>
+  <ul class="collapse">
+  <li><a href="#tabla-resumen-general" id="toc-tabla-resumen-general" class="nav-link" data-scroll-target="#tabla-resumen-general"><span class="header-section-number">2.4.1</span> Tabla Resumen General</a></li>
+  <li><a href="#revisión-de-artículos-importantes" id="toc-revisión-de-artículos-importantes" class="nav-link" data-scroll-target="#revisión-de-artículos-importantes"><span class="header-section-number">2.4.2</span> Revisión de Artículos importantes</a></li>
+  </ul></li>
+  <li><a href="#discusión" id="toc-discusión" class="nav-link" data-scroll-target="#discusión"><span class="header-section-number">2.5</span> Discusión</a>
+  <ul class="collapse">
+  <li><a href="#análisis-comparativo" id="toc-análisis-comparativo" class="nav-link" data-scroll-target="#análisis-comparativo"><span class="header-section-number">2.5.1</span> Análisis comparativo</a></li>
+  <li><a href="#brechas-en-la-literatura" id="toc-brechas-en-la-literatura" class="nav-link" data-scroll-target="#brechas-en-la-literatura"><span class="header-section-number">2.5.2</span> Brechas en la literatura</a></li>
+  <li><a href="#implicaciones-para-tu-investigación" id="toc-implicaciones-para-tu-investigación" class="nav-link" data-scroll-target="#implicaciones-para-tu-investigación"><span class="header-section-number">2.5.3</span> Implicaciones para tu investigación</a></li>
+  </ul></li>
+  <li><a href="#conclusión-y-propuesta" id="toc-conclusión-y-propuesta" class="nav-link" data-scroll-target="#conclusión-y-propuesta"><span class="header-section-number">2.6</span> Conclusión y Propuesta</a>
+  <ul class="collapse">
+  <li><a href="#conclusión-de-la-revisión" id="toc-conclusión-de-la-revisión" class="nav-link" data-scroll-target="#conclusión-de-la-revisión"><span class="header-section-number">2.6.1</span> Conclusión de la revisión</a></li>
+  <li><a href="#propuesta-de-tesis" id="toc-propuesta-de-tesis" class="nav-link" data-scroll-target="#propuesta-de-tesis"><span class="header-section-number">2.6.2</span> Propuesta de tesis</a></li>
+  </ul></li>
+  <li><a href="#base-general" id="toc-base-general" class="nav-link" data-scroll-target="#base-general"><span class="header-section-number">2.7</span> Base General</a></li>
   </ul>
 </nav>
     </div>
@@ -151,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Papers Review: VFM</span></h1>
-<p class="subtitle lead">Remote Sensing <ins>Vision</ins> Foundation Models</p>
+<p class="subtitle lead">Avances recientes en modelos de fundamentales de Visión en la Percepción Remota</p>
 </div>
 
 
@@ -168,6 +206,286 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="introducción" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="introducción"><span class="header-section-number">2.1</span> Introducción</h2>
+<section id="contexto-general" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="contexto-general"><span class="header-section-number">2.1.1</span> Contexto general</h3>
+<p>El Remote Sensing (teledetección) ha emergido como una herramienta crucial para la observación y análisis del planeta Tierra, permitiendo monitorear fenómenos ambientales y territoriales con un nivel de detalle sin precedentes. Tecnologías como las imágenes satelitales y los sistemas aéreos han facilitado la recopilación continua de datos espaciales de alta resolución, lo que es fundamental para aplicaciones como la detección de cambios ambientales, la gestión de desastres naturales, el monitoreo de recursos y la planificación territorial.</p>
+<p>En este contexto, los modelos fundacionales (Foundation Models, FMs) representan una innovación disruptiva en el campo de la inteligencia artificial aplicada a la percepción remota. Estos modelos preentrenados sobre grandes volúmenes de datos no etiquetados son capaces de aprender representaciones generales que pueden ajustarse fácilmente a tareas específicas utilizando cantidades relativamente pequeñas de datos anotados. Su flexibilidad ha permitido abordar problemas complejos en teledetección, como la segmentación semántica, la detección de objetos y la clasificación de escenas, optimizando así el análisis de datos multiespectrales y temporales.</p>
+<p>Los avances recientes en Visual Foundation Models (VFMs), basados en arquitecturas avanzadas como los Vision Transformers (ViT) y enfoques autosupervisados, han potenciado su aplicabilidad a datos de alta resolución. Este progreso se alinea con la creciente capacidad de procesamiento computacional y la disponibilidad masiva de imágenes satelitales de alta calidad, las cuales aumentan continuamente en resolución espacial y temporal. Estas características posicionan a los VFMs como una herramienta prometedora para enfrentar desafíos territoriales y ambientales, particularmente en regiones como Chile y América Latina, donde los datos geoespaciales son abundantes pero subutilizados.</p>
+</section>
+<section id="objetivos-de-la-revisión" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="objetivos-de-la-revisión"><span class="header-section-number">2.1.2</span> Objetivos de la revisión</h3>
+<p>El propósito de esta revisión bibliográfica es:</p>
+<ol type="1">
+<li>Explorar el estado del arte en el desarrollo y aplicaciones de los modelos fundacionales en percepción remota, con un enfoque en los Visual Foundation Models (VFMs).</li>
+<li>Analizar su potencial para abordar problemas territoriales específicos en contextos geográficos de Chile y América Latina.</li>
+<li>Identificar oportunidades y desafíos para la implementación de estos modelos, considerando tanto la creciente disponibilidad de datos geoespaciales como las capacidades computacionales actuales.</li>
+<li>Proponer una base conceptual que sirva como fundamento para evaluar y adaptar VFMs en aplicaciones concretas, maximizando su impacto en problemas como planificación territorial, monitoreo ambiental y manejo de desastres.</li>
+</ol>
+</section>
+</section>
+<section id="metodología" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="metodología"><span class="header-section-number">2.2</span> Metodología</h2>
+<section id="criterios-de-inclusión" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="criterios-de-inclusión"><span class="header-section-number">2.2.1</span> Criterios de Inclusión</h3>
+<p>Para garantizar que los estudios seleccionados sean relevantes y alineados con los objetivos de esta revisión, se definirán los siguientes criterios de inclusión:</p>
+<ol type="1">
+<li><strong>Relevancia temática</strong></li>
+</ol>
+<ul>
+<li>Estudios centrados en modelos fundacionales de visión (VFMs) aplicados a teledetección, específicamente en tareas como detección de cambios, clasificación de uso de suelo, segmetación semántica.</li>
+<li>Investigaciones relacionadas con el uso de datos geoespaciales, imágenes satelitales o aéreas en problemas ambientales y sociales.</li>
+</ul>
+<ol start="2" type="1">
+<li><strong>Reciente publicación</strong></li>
+</ol>
+<ul>
+<li>Publicaciones desde 2020 en adelante, considerando la novedad del campo y su evolución rápida.</li>
+<li>Publicaciones en revistas indexadas o conferencias de alto impacto en áreas de inteligencia artificial, percepción remota o teledetección.</li>
+</ul>
+<ol start="3" type="1">
+<li><strong>Relevancia geográfica y temática</strong></li>
+</ol>
+<ul>
+<li>Estudios que incluyan aplicaciones en problemas reales relacionados con el medio ambiente y las personas, como:</li>
+<li>Cambio climático, gestión de recursos naturales, agricultura sostenible, planificación urbana, monitoreo de desastres o biodiversidad.</li>
+<li>Preferencia por estudios que incluyan contextos aplicables a Chile o América Latina, aunque no se excluirán estudios con enfoques globales relevantes.</li>
+</ul>
+<ol start="4" type="1">
+<li><strong>Disponibilidad de resultados, métricas y códigos</strong></li>
+</ol>
+<ul>
+<li>Estudios que incluyan evaluaciones cuantitativas de desempeño, como métricas de clasificación, segmentación o detección (e.g., IoU, precisión, F1-score).</li>
+<li>Descripción detallada de los datasets utilizados y la metodología aplicada, eventualmente códigos.</li>
+</ul>
+<ol start="5" type="1">
+<li><strong>Enfoque en arquitectura y métodos de aprendizaje</strong></li>
+</ol>
+<ul>
+<li>Modelos basados en arquitecturas avanzadas, como Vision Transformers (ViT) y enfoques autosupervisados (e.g., MAE, contrastive learning).</li>
+<li>Innovaciones metodológicas para optimizar el uso de datos no etiquetados o resolver problemas multiespectrales y multitemporales.</li>
+</ul>
+</section>
+</section>
+<section id="marco-conceptual" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="marco-conceptual"><span class="header-section-number">2.3</span> Marco Conceptual</h2>
+<p>A continuación, se organiza y define cada concepto clave relevante al tema de la revisión bibliográfica sobre modelos fundacionales de visión aplicados a teledetección. Estos conceptos proporcionan el fundamento teórico necesario para comprender el desarrollo y aplicación de los Visual Foundation Models (VFMs) en problemas territoriales y ambientales.</p>
+<p><img src="images/VFMs_esquema.png" class="img-fluid"></p>
+<p>Son modelos de aprendizaje profundo preentrenados sobre grandes volúmenes de datos no etiquetados, diseñados para tareas de visión por computadora. Su arquitectura avanzada, basada en enfoques como Vision Transformers (ViT), los hace altamente adaptables a una variedad de aplicaciones en teledetección, desde segmentación semántica hasta detección de cambios.</p>
+<section id="autoencoders-enmascarados-mae" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="autoencoders-enmascarados-mae"><span class="header-section-number">2.3.1</span> Autoencoders Enmascarados (MAE)</h3>
+<p>Los MAE son modelos de aprendizaje profundo diseñados para reconstruir datos de entrada a partir de una versión parcialmente enmascarada.</p>
+<ul>
+<li>Aplicación en VFMs: En el contexto de la teledetección, los MAE son clave para procesar imágenes satelitales, permitiendo al modelo aprender representaciones robustas incluso con datos incompletos o ruidosos.</li>
+</ul>
+</section>
+<section id="aprendizaje-contrastivo" class="level3" data-number="2.3.2">
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="aprendizaje-contrastivo"><span class="header-section-number">2.3.2</span> Aprendizaje Contrastivo</h3>
+<p>Es una técnica de aprendizaje autosupervisado que entrena al modelo para distinguir entre pares de datos similares (positivos) y disímiles (negativos).</p>
+<ul>
+<li>Relevancia en VFMs: Es utilizado en modelos como CROMA para aprender representaciones invariantes a sensores múltiples (e.g., radar y ópticos).</li>
+</ul>
+</section>
+<section id="datos-multimodales-y-alineación-espacial" class="level3" data-number="2.3.3">
+<h3 data-number="2.3.3" class="anchored" data-anchor-id="datos-multimodales-y-alineación-espacial"><span class="header-section-number">2.3.3</span> Datos Multimodales y Alineación Espacial</h3>
+<ul>
+<li>Datos Multimodales: Provienen de sensores diferentes (e.g., Sentinel-1 para radar y Sentinel-2 para óptico), enriqueciendo las representaciones aprendidas por los VFMs.</li>
+<li>Alineación Espacial: Garantiza que los datos de distintos sensores correspondan a la misma ubicación geográfica, asegurando consistencia en las representaciones aprendidas.</li>
+</ul>
+</section>
+<section id="codificación-de-posición-relativa-rpe" class="level3" data-number="2.3.4">
+<h3 data-number="2.3.4" class="anchored" data-anchor-id="codificación-de-posición-relativa-rpe"><span class="header-section-number">2.3.4</span> Codificación de Posición Relativa (RPE)</h3>
+<p>Técnica utilizada para incorporar información posicional en modelos basados en transformers. - Impacto en VFMs: Mejora la capacidad de generalización de modelos como CROMA en imágenes más grandes.</p>
+</section>
+</section>
+<section id="revisión-de-los-estudios" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="revisión-de-los-estudios"><span class="header-section-number">2.4</span> Revisión de los Estudios</h2>
+<p>Para organizar y analizar los artículos científicos se construyó una tabla que resume información importante para cumplir con los objetivo del presente capítulo, los criterios y contenidos estatal corresponde a los siguientes:</p>
+<ul>
+<li>Referencia: Mencionar los autores y año, incluyendo una referencia breve para seguimiento.</li>
+<li>Objetivo del Estudio: Resumir el problema y la tarea específica abordada.</li>
+<li>Arquitectura: Detallar el modelo utilizado (e.g., ViT, Swin Transformer, MAE).</li>
+<li>Dataset: Especificar los datasets usados, incluyendo resolución y tipo (e.g., SAR, multiespectral).</li>
+<li>Aplicación: Indicar cómo se aplica el modelo (e.g., monitoreo de inundaciones, detección de cultivos).</li>
+<li>Métricas: Proporcionar los valores clave de desempeño.</li>
+<li>Limitaciones: Identificar las barreras técnicas o de aplicación señaladas en el estudio.</li>
+<li>Relevancia para Chile/LatAm: Evaluar la aplicabilidad en contextos locales según problemas ambientales o sociales.</li>
+</ul>
+<section id="tabla-resumen-general" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="tabla-resumen-general"><span class="header-section-number">2.4.1</span> Tabla Resumen General</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 18%">
+<col style="width: 9%">
+<col style="width: 17%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Referencia</strong></th>
+<th><strong>Objetivo del Estudio</strong></th>
+<th><strong>Arquitectura</strong></th>
+<th><strong>Dataset</strong></th>
+<th><strong>Aplicación</strong></th>
+<th><strong>Métricas</strong></th>
+<th><strong>Limitaciones</strong></th>
+<th><strong>Relevancia para Chile/LatAm</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fuller et al.&nbsp;(2023)</td>
+<td>Desarrollar un framework para aprender representaciones unimodales y multimodales para la Observación de la Tierra, aprovechando objetivos autosupervisados contrastivos y de reconstrucción.</td>
+<td>CROMA (autoencoder contrastivo radar-óptico enmascarado), basado en Vision Transformer (ViT), con codificación de posición 2D-ALiBi y X-ALiBi.</td>
+<td>BigEarthNet, fMoW-Sentinel, EuroSAT, Canadian Cropland, DFC2020, DW-Expert, MARIDA. Usando imágenes Sentinel-2 (óptico) y Sentinel-1 (radar) a diferentes resoluciones.</td>
+<td>Clasificación de imágenes satelitales y segmentación semántica.</td>
+<td>Supera el estado del arte (SatMAE) en un promedio de 5.4% y 6.4% en mIoU para backbones ViT-B y ViT-L, respectivamente.</td>
+<td>Requiere datos multimodales alineados espacialmente. Alto costo computacional para entrenar modelos grandes.</td>
+<td>Alta: Chile posee una amplia cobertura de imágenes Sentinel, lo que permitiría aplicar CROMA para diversas aplicaciones como la clasificación de uso y cobertura del suelo, monitoreo de recursos hídricos, agricultura de precisión, entre otras.</td>
+</tr>
+<tr class="even">
+<td>Wang et al.&nbsp;(2022)</td>
+<td>Proponer una red neuronal (ASN) para la detección de cambios bi-temporales, integrando pares de características asimétricas y refinamiento de características.</td>
+<td>Adaptive Symmetric Network (ASN) con codificador-decodificador, utilizando bloques residuales, Xception o Squeeze-and-Excitation.</td>
+<td>SECOND dataset (multi-clase, hasta 36 tipos de cambio). No se especifica la resolución ni los sensores.</td>
+<td>Detección de cambios en imágenes satelitales para análisis de urbanización, desastres naturales, etc.</td>
+<td>ASN-ATL supera HRSCD.str4 en 1.9 en mIoU y 2.2 en SeK con bloques Xception.</td>
+<td>No se especifica la resolución de las imágenes ni los sensores utilizados.</td>
+<td>Media: La detección de cambios es relevante para Chile, por ejemplo, para el monitoreo de la deforestación o la expansión urbana. La aplicabilidad de ASN dependerá de la disponibilidad de datasets con características similares a SECOND.</td>
+</tr>
+<tr class="odd">
+<td>Chen et al.&nbsp;(2023)</td>
+<td>Aprovechar el conocimiento general de un modelo fundacional (SAM) para construir una red de detección de cambios eficiente (TTP).</td>
+<td>Time-Traveling Prompt (TTP), basado en el modelo fundacional Segment Anything Model (SAM), con ajuste fino de rango bajo, una puerta de activación de viaje en el tiempo y un decodificador multinivel.</td>
+<td>LEVIR-CD dataset. No se especifica la resolución ni los sensores.</td>
+<td>Detección de cambios en imágenes satelitales para el análisis del desarrollo urbano, monitoreo de desastres naturales, etc.</td>
+<td>TTP logra un F1 de 92.1 e IoU de 85.6, superando a métodos como WNet y CSTSUNet.</td>
+<td>Dependencia del modelo fundacional SAM. No se especifica la resolución ni los sensores de las imágenes.</td>
+<td>Media: El uso de modelos fundacionales como SAM para la detección de cambios en Chile es prometedor. Se requiere investigar la adaptabilidad de TTP a las condiciones locales.</td>
+</tr>
+<tr class="even">
+<td>Muszynski et al.&nbsp;(2024)</td>
+<td>Evaluar la capacidad de los modelos fundacionales geoespaciales para estimar la biomasa aérea a partir de imágenes satelitales con pocos parámetros ajustables.</td>
+<td>Dos modelos fundacionales geoespaciales (Global GFM y Local GFM) con encoder congelado y una capa de regresión.</td>
+<td>Imágenes HLS de la NASA de tres ecorregiones en Brasil. Resolución de 30 metros.</td>
+<td>Estimación de biomasa aérea para el estudio del ciclo del carbono y la gestión forestal.</td>
+<td>Los GFMs con encoder congelado logran un rendimiento comparable al de una U-Net entrenada desde cero, con 13 veces menos parámetros.</td>
+<td>La generalización a otras regiones puede verse afectada por la variabilidad en las características del bosque.</td>
+<td>Media: La estimación de biomasa aérea es relevante para el monitoreo forestal en Chile. Se necesita evaluar la transferibilidad de los GFMs a los bosques nativos del país.</td>
+</tr>
+<tr class="odd">
+<td>Tseng et al.&nbsp;(2023)</td>
+<td>Aborda la escasez de datos etiquetados en la teledetección mediante el desarrollo de Presto, un modelo ligero de Transformers preentrenado para series temporales.</td>
+<td>Transformers con codificador-decodificador, basado en Masked Autoencoding</td>
+<td>Diversos: CropHarvest, TreeSatAI, EuroSAT, Sen1Floods11, S2-Agri100; resolución y tipo de datos variables (SAR, multiespectral).</td>
+<td>Clasificación de cultivos, detección de especies de árboles, clasificación de cobertura del suelo, mapeo de inundaciones, monitoreo de cultivos.</td>
+<td>Precisión variable según la tarea; en algunos casos supera a los modelos de última generación.</td>
+<td>Limitado a datos de series temporales de píxeles. Requiere adaptación para imágenes de alta resolución.</td>
+<td>Alta: útil para monitoreo agrícola, gestión forestal, y evaluación de riesgos naturales en Chile y LatAm.</td>
+</tr>
+<tr class="even">
+<td>Hsu and Arundel (2023)</td>
+<td>Evalúa el desempeño del modelo geoespacial Prithvi para el mapeo de inundaciones.</td>
+<td>Transformers (ViT) preentrenado con Masked Autoencoder (MAE)</td>
+<td>Sen1Floods11; imágenes Sentinel-1 y Sentinel-2, resolución de 10m.</td>
+<td>Mapeo de inundaciones</td>
+<td>Transferibilidad en datos no vistos; menor precisión que U-Net y Segformer en datos conocidos.</td>
+<td>Requiere 3 bandas adicionales a RGB y carece de arquitectura de extremo a extremo para análisis de alto nivel.</td>
+<td>Alta: relevante para evaluación de daños, planificación de emergencias y diseño de sistemas de alerta temprana en Chile.</td>
+</tr>
+<tr class="odd">
+<td>Mall et al.&nbsp;(2023)</td>
+<td>Sin información específica sobre el estudio en las fuentes.</td>
+<td>No especificada.</td>
+<td>No especificada.</td>
+<td>No especificada.</td>
+<td>No se proporcionan métricas clave.</td>
+<td>No especificada.</td>
+<td>Sin información suficiente para evaluar relevancia.</td>
+</tr>
+<tr class="even">
+<td>Li et al.&nbsp;(2023)</td>
+<td>Investiga métodos SSL para reconocimiento automático de objetivos (ATR) en imágenes SAR; propone SAR-JEPA para predicción de gradientes multiescala.</td>
+<td>Basado en Masked Image Modeling (MIM) y Joint-Embedding Predictive Architecture (JEPA).</td>
+<td>MSTAR, FUSAR-Ship, SAR-ACD; imágenes SAR.</td>
+<td>Reconocimiento de objetivos en imágenes SAR (vehículos, barcos, aviones).</td>
+<td>Supera métodos SSL en clasificación con pocos disparos.</td>
+<td>Requiere grandes datasets SAR para preentrenamiento.</td>
+<td>Moderada: útil para monitoreo de deforestación, pesca ilegal, y evaluación de desastres en Chile y LatAm.</td>
+</tr>
+<tr class="odd">
+<td>Reed et al.&nbsp;(2023)</td>
+<td>Explora el aprendizaje de representaciones geoespaciales multiescala utilizando Scale-MAE, un MAE sensible a la escala.</td>
+<td>MAE con codificador ViT y decodificador piramidal Laplaciano</td>
+<td>Functional Map of the World (FMoW), RESISC-45, entre otros; imágenes RGB y multiespectrales de diferentes resoluciones.</td>
+<td>Clasificación de uso del suelo, segmentación semántica (detección de edificios).</td>
+<td>Muestra robustez a la escala y supera a SatMAE y ConvMAE en algunas tareas.</td>
+<td>Requiere investigación adicional sobre la influencia del tamaño del parche en el rendimiento.</td>
+<td>Alta: aplicable al mapeo de cobertura del suelo, monitoreo urbano y análisis de imágenes satelitales en Chile y LatAm.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="revisión-de-artículos-importantes" class="level3" data-number="2.4.2">
+<h3 data-number="2.4.2" class="anchored" data-anchor-id="revisión-de-artículos-importantes"><span class="header-section-number">2.4.2</span> Revisión de Artículos importantes</h3>
+<p>Para cada estudio, incluir las siguientes subsecciones:</p>
+<ul>
+<li>[Título del Estudio] Referencia completa: Autores, título, publicación, año.</li>
+<li>Objetivo del estudio: ¿Qué problema aborda el artículo?</li>
+<li>Métodos utilizados: Arquitecturas, datasets, técnicas de preentrenamiento.</li>
+<li>Resultados principales: Métricas, tareas downstream, ventajas frente a otros enfoques.</li>
+<li>Limitaciones identificadas: Críticas o desafíos no resueltos.</li>
+<li>Relación con otros estudios: Comparación o integración con investigaciones similares.</li>
+</ul>
+<p><em>Nota: Usa tablas o gráficos para resumir comparaciones clave, como métricas de rendimiento en tareas downstream.</em></p>
+</section>
+</section>
+<section id="discusión" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="discusión"><span class="header-section-number">2.5</span> Discusión</h2>
+<section id="análisis-comparativo" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="análisis-comparativo"><span class="header-section-number">2.5.1</span> Análisis comparativo</h3>
+<ul>
+<li>Comparar las fortalezas y debilidades de los estudios analizados.</li>
+<li>Identificación de patrones comunes en resultados o enfoques.</li>
+</ul>
+</section>
+<section id="brechas-en-la-literatura" class="level3" data-number="2.5.2">
+<h3 data-number="2.5.2" class="anchored" data-anchor-id="brechas-en-la-literatura"><span class="header-section-number">2.5.2</span> Brechas en la literatura</h3>
+<ul>
+<li>Identificar áreas no exploradas o que requieren mayor desarrollo.</li>
+</ul>
+</section>
+<section id="implicaciones-para-tu-investigación" class="level3" data-number="2.5.3">
+<h3 data-number="2.5.3" class="anchored" data-anchor-id="implicaciones-para-tu-investigación"><span class="header-section-number">2.5.3</span> Implicaciones para tu investigación</h3>
+<ul>
+<li>Cómo los resultados revisados fundamentan tu propuesta de tesis.</li>
+<li>Adaptaciones o mejoras sugeridas para futuros trabajos.</li>
+</ul>
+</section>
+</section>
+<section id="conclusión-y-propuesta" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="conclusión-y-propuesta"><span class="header-section-number">2.6</span> Conclusión y Propuesta</h2>
+<section id="conclusión-de-la-revisión" class="level3" data-number="2.6.1">
+<h3 data-number="2.6.1" class="anchored" data-anchor-id="conclusión-de-la-revisión"><span class="header-section-number">2.6.1</span> Conclusión de la revisión</h3>
+<ul>
+<li>Síntesis de los hallazgos más importantes.</li>
+</ul>
+</section>
+<section id="propuesta-de-tesis" class="level3" data-number="2.6.2">
+<h3 data-number="2.6.2" class="anchored" data-anchor-id="propuesta-de-tesis"><span class="header-section-number">2.6.2</span> Propuesta de tesis</h3>
+<ul>
+<li>Presentar la pregunta o hipótesis principal.</li>
+<li>Breve descripción del enfoque metodológico y su relación con la revisión.</li>
+</ul>
+</section>
+</section>
+<section id="base-general" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="base-general"><span class="header-section-number">2.7</span> Base General</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -699,182 +1017,6 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<section id="remote-sensing-vision-language-foundation-models" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="remote-sensing-vision-language-foundation-models"><span class="header-section-number">2.1</span> Remote Sensing <ins>Vision-Language</ins> Foundation Models</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;">Abbreviation</th>
-<th>Title</th>
-<th style="text-align: center;">Publication</th>
-<th style="text-align: center;">Paper</th>
-<th style="text-align: center;">Code &amp; Weights</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><strong>RSGPT</strong></td>
-<td><strong>RSGPT: A Remote Sensing Vision Language Model and Benchmark</strong></td>
-<td style="text-align: center;">Arxiv2023</td>
-<td style="text-align: center;"><a href="https://arxiv.org/abs/2307.15266">RSGPT</a></td>
-<td style="text-align: center;"><a href="https://github.com/Lavender105/RSGPT">link</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>RemoteCLIP</strong></td>
-<td><strong>RemoteCLIP: A Vision Language Foundation Model for Remote Sensing</strong></td>
-<td style="text-align: center;">Arxiv2023</td>
-<td style="text-align: center;"><a href="https://arxiv.org/abs/2306.11029">RemoteCLIP</a></td>
-<td style="text-align: center;"><a href="https://github.com/ChenDelong1999/RemoteCLIP">link</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><strong>GeoRSCLIP</strong></td>
-<td><strong>RS5M: A Large Scale Vision-Language Dataset for Remote Sensing Vision-Language Foundation Model</strong></td>
-<td style="text-align: center;">Arxiv2023</td>
-<td style="text-align: center;"><a href="https://arxiv.org/abs/2306.11300">GeoRSCLIP</a></td>
-<td style="text-align: center;"><a href="https://github.com/om-ai-lab/RS5M?tab=readme-ov-file">link</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>GRAFT</strong></td>
-<td><strong>Remote Sensing Vision-Language Foundation Models without Annotations via Ground Remote Alignment</strong></td>
-<td style="text-align: center;">ICLR2024</td>
-<td style="text-align: center;"><a href="https://openreview.net/pdf?id=w9tc699w3Z">GRAFT</a></td>
-<td style="text-align: center;">null</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><strong>-</strong></td>
-<td><strong>Charting New Territories: Exploring the Geographic and Geospatial Capabilities of Multimodal LLMs</strong></td>
-<td style="text-align: center;">Arxiv2023</td>
-<td style="text-align: center;"><a href="https://arxiv.org/abs/2311.14656">Paper</a></td>
-<td style="text-align: center;"><a href="https://github.com/jonathan-roberts1/charting-new-territories">link</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>-</strong></td>
-<td><strong>Remote Sensing ChatGPT: Solving Remote Sensing Tasks with ChatGPT and Visual Models</strong></td>
-<td style="text-align: center;">Arxiv2024</td>
-<td style="text-align: center;"><a href="https://arxiv.org/abs/2401.09083">Paper</a></td>
-<td style="text-align: center;"><a href="https://github.com/HaonanGuo/Remote-Sensing-ChatGPT">link</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><strong>SkyEyeGPT</strong></td>
-<td><strong>SkyEyeGPT: Unifying Remote Sensing Vision-Language Tasks via Instruction Tuning with Large Language Model</strong></td>
-<td style="text-align: center;">Arxiv2024</td>
-<td style="text-align: center;"><a href="https://arxiv.org/abs/2401.09712">Paper</a></td>
-<td style="text-align: center;"><a href="https://github.com/ZhanYang-nwpu/SkyEyeGPT">link</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>EarthGPT</strong></td>
-<td><strong>EarthGPT: A Universal Multi-modal Large Language Model for Multi-sensor Image Comprehension in Remote Sensing Domain</strong></td>
-<td style="text-align: center;">Arxiv2024</td>
-<td style="text-align: center;"><a href="https://arxiv.org/abs/2401.16822">Paper</a></td>
-<td style="text-align: center;">null</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><strong>SkyCLIP</strong></td>
-<td><strong>SkyScript: A Large and Semantically Diverse Vision-Language Dataset for Remote Sensing</strong></td>
-<td style="text-align: center;">AAAI2024</td>
-<td style="text-align: center;"><a href="https://arxiv.org/abs/2312.12856">SkyCLIP</a></td>
-<td style="text-align: center;"><a href="https://github.com/wangzhecheng/SkyScript">link</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>GeoChat</strong></td>
-<td><strong>GeoChat: Grounded Large Vision-Language Model for Remote Sensing</strong></td>
-<td style="text-align: center;">CVPR2024</td>
-<td style="text-align: center;"><a href="https://arxiv.org/abs/2311.15826">GeoChat</a></td>
-<td style="text-align: center;"><a href="https://github.com/mbzuai-oryx/GeoChat">link</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><strong>LHRS-Bot</strong></td>
-<td><strong>LHRS-Bot: Empowering Remote Sensing with VGI-Enhanced Large Multimodal Language Model</strong></td>
-<td style="text-align: center;">Arxiv2024</td>
-<td style="text-align: center;"><a href="https://arxiv.org/abs/2402.02544">Paper</a></td>
-<td style="text-align: center;"><a href="https://github.com/NJU-LHRS/LHRS-Bot">link</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>H2RSVLM</strong></td>
-<td><strong>H2RSVLM: Towards Helpful and Honest Remote Sensing Large Vision Language Model</strong></td>
-<td style="text-align: center;">Arxiv2024</td>
-<td style="text-align: center;"><a href="https://arxiv.org/abs/2403.20213">Paper</a></td>
-<td style="text-align: center;"><a href="https://github.com/opendatalab/H2RSVLM">link</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><strong>RS-LLaVA</strong></td>
-<td><strong>RS-LLaVA: Large Vision Language Model for Joint Captioning and Question Answering in Remote Sensing Imagery</strong></td>
-<td style="text-align: center;">RS2024</td>
-<td style="text-align: center;"><a href="https://www.mdpi.com/2072-4292/16/9/1477">Paper</a></td>
-<td style="text-align: center;"><a href="https://github.com/BigData-KSU/RS-LLaVA?tab=readme-ov-file">link</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>SkySenseGPT</strong></td>
-<td><strong>SkySenseGPT: A Fine-Grained Instruction Tuning Dataset and Model for Remote Sensing Vision-Language Understanding</strong></td>
-<td style="text-align: center;">Arxiv2024</td>
-<td style="text-align: center;"><a href="https://arxiv.org/abs/2406.10100">Paper</a></td>
-<td style="text-align: center;"><a href="https://github.com/Luo-Z13/SkySenseGPT">link</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><strong>EarthMarker</strong></td>
-<td><strong>EarthMarker: Visual Prompt Learning for Region-level and Point-level Remote Sensing Imagery Comprehension</strong></td>
-<td style="text-align: center;">Arxiv2024</td>
-<td style="text-align: center;"><a href="https://arxiv.org/abs/2407.13596">Paper</a></td>
-<td style="text-align: center;"><a href="https://github.com/wivizhang/EarthMarker">link</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>GeoText</strong></td>
-<td><strong>Towards Natural Language-Guided Drones: GeoText-1652 Benchmark with Spatial Relation Matching</strong></td>
-<td style="text-align: center;">ECCV2024</td>
-<td style="text-align: center;"><a href="https://arxiv.org/abs/2311.12751">Paper</a></td>
-<td style="text-align: center;"><a href="https://multimodalgeo.github.io/GeoText/">link</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><strong>TEOChat</strong></td>
-<td><strong>TEOChat: Large Language and Vision Assistant for Temporal Earth Observation Data</strong></td>
-<td style="text-align: center;">Arxiv2024</td>
-<td style="text-align: center;"><a href="https://arxiv.org/abs/2410.06234">Paper</a></td>
-<td style="text-align: center;"><a href="https://github.com/ermongroup/TEOChat">link</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>Aquila</strong></td>
-<td><strong>Aquila: A Hierarchically Aligned Visual-Language Model for Enhanced Remote Sensing Image Comprehension</strong></td>
-<td style="text-align: center;">Arxiv2024</td>
-<td style="text-align: center;"><a href="https://arxiv.org/pdf/2411.06074">Paper</a></td>
-<td style="text-align: center;">null</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><strong>LHRS-Bot-Nova</strong></td>
-<td><strong>LHRS-Bot-Nova: Improved Multimodal Large Language Model for Remote Sensing Vision-Language Interpretation</strong></td>
-<td style="text-align: center;">Arxiv2024</td>
-<td style="text-align: center;"><a href="https://arxiv.org/pdf/2411.09301">Paper</a></td>
-<td style="text-align: center;"><a href="https://github.com/NJU-LHRS/LHRS-Bot">link</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>RSCLIP</strong></td>
-<td><strong>Pushing the Limits of Vision-Language Models in Remote Sensing without Human Annotations</strong></td>
-<td style="text-align: center;">Arxiv2024</td>
-<td style="text-align: center;"><a href="https://arxiv.org/pdf/2409.07048">Paper</a></td>
-<td style="text-align: center;">null</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><strong>RingMoGPT</strong></td>
-<td><strong>RingMoGPT: A Unified Remote Sensing Foundation Model for Vision, Language, and grounded tasks</strong></td>
-<td style="text-align: center;">TGRS2024</td>
-<td style="text-align: center;"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=10777289">Paper</a></td>
-<td style="text-align: center;">null</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>RSUniVLM</strong></td>
-<td><strong>RSUniVLM: A Unified Vision Language Model for Remote Sensing via Granularity-oriented Mixture of Experts</strong></td>
-<td style="text-align: center;">Arxiv2024</td>
-<td style="text-align: center;"><a href="https://arxiv.org/abs/2412.05679">Paper</a></td>
-<td style="text-align: center;"><a href="https://rsunivlm.github.io/">link</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><strong>EarthDial</strong></td>
-<td><strong>EarthDial: Turning Multi-sensory Earth Observations to Interactive Dialogues</strong></td>
-<td style="text-align: center;">Arxiv2024</td>
-<td style="text-align: center;"><a href="https://arxiv.org/pdf/2412.15190#page=3.84">Paper</a></td>
-<td style="text-align: center;">null</td>
-</tr>
-</tbody>
-</table>
 
 
 </section>
@@ -1304,8 +1446,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./propuesta.html" class="pagination-link" aria-label="Propuesta">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Propuesta</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
