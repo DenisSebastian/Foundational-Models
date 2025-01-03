@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Denis Berroeta G.">
-<meta name="dcterms.date" content="2024-12-19">
 
-<title>Modelos Fundacionales de IA</title>
+<title>3&nbsp; Propuesta – Modelos Fundacionales de IA</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./references.html" rel="next">
+<link href="./papers_review_vfm.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -83,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./propuesta.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Propuesta</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -110,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -128,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./propuesta.html" class="sidebar-item-text sidebar-link">
+  <a href="./propuesta.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Propuesta</span></span></a>
   </div>
 </li>
@@ -148,10 +147,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
+  <li><a href="#temática" id="toc-temática" class="nav-link active" data-scroll-target="#temática"><span class="header-section-number">3.1</span> Temática:</a></li>
+  <li><a href="#chapters" id="toc-chapters" class="nav-link" data-scroll-target="#chapters"><span class="header-section-number">3.2</span> Chapters:</a>
   <ul class="collapse">
-  <li><a href="#autor" id="toc-autor" class="nav-link" data-scroll-target="#autor">Autor:</a></li>
+  <li><a href="#change-detection" id="toc-change-detection" class="nav-link" data-scroll-target="#change-detection"><span class="header-section-number">3.2.1</span> Change Detection</a></li>
+  <li><a href="#land-cover-classification" id="toc-land-cover-classification" class="nav-link" data-scroll-target="#land-cover-classification"><span class="header-section-number">3.2.2</span> Land Cover Classification</a></li>
+  <li><a href="#segmetation" id="toc-segmetation" class="nav-link" data-scroll-target="#segmetation"><span class="header-section-number">3.2.3</span> Segmetation</a></li>
   </ul></li>
+  <li><a href="#implementación" id="toc-implementación" class="nav-link" data-scroll-target="#implementación"><span class="header-section-number">3.3</span> Implementación</a></li>
   </ul>
 </nav>
     </div>
@@ -160,27 +163,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Modelos Fundacionales de IA</h1>
-<p class="subtitle lead">Modelos Fundacionales en Remote Sensing: Avances, Desafíos y Aplicaciones</p>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Propuesta</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Denis Berroeta G. </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">December 19, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -190,20 +180,39 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p><strong>“Revisión de Modelos Fundacionales en Remote Sensing: Avances, Desafíos y Aplicaciones”</strong></p>
-<p>El propósito de este libro/review es proporcionar una visión integral y actualizada del desarrollo y aplicación de los modelos fundacionales en el área de Remote Sensing. Se analiza cómo estos modelos, a través de técnicas de pre-entrenamiento en grandes volúmenes de datos y ajuste fino en tareas específicas, han revolucionado la interpretación y análisis de datos geoespaciales. Además, se identifican los principales desafíos, se destacan los avances recientes y se proponen direcciones futuras para optimizar el uso de estos modelos en la comunidad científica y profesional.</p>
-<p>La motivación central de este review surge de la creciente complejidad y heterogeneidad de los datos en Remote Sensing, que demandan enfoques robustos, escalables y generalizables. A medida que las tecnologías de sensores avanzan, se generan volúmenes masivos de información multiespectral, temporal y espacial, lo que desafía los enfoques tradicionales y requiere la implementación de modelos más sofisticados y eficientes.</p>
-<p>El presente trabajo tiene como <strong>objetivo</strong> analizar los avances más recientes en modelos fundacionales aplicados a Remote Sensing, identificar sus aplicaciones clave y explorar los desafíos y oportunidades asociados a su implementación. Este estudio proporciona una perspectiva integral que facilita la comprensión del impacto de estos modelos en el área y establece las bases para futuras investigaciones y desarrollos.</p>
-<section id="autor" class="level2">
-<h2 class="anchored" data-anchor-id="autor">Autor:</h2>
-<p><a href="https://denissebastian.github.io/DenisBerroeta/">Denis Berroeta</a></p>
-<p>web: <a href="https://denissebastian.github.io/DenisBerroeta/">web personal</a>, email: <a href="mailto:denisberroeta@gmail.com" class="email">denisberroeta@gmail.com</a></p>
-<p>Master of Science in Data Science, Magíster en Inteligencia Artificial y cursando un Doctorado en Data Science. Ingeniero en Prevención de Riesgos y Topógrafo. Temas de interés Inteligencia Artificial (LLM, CNN), Análisis espacial, Percepción Remota.</p>
-
-
+<section id="temática" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="temática"><span class="header-section-number">3.1</span> Temática:</h2>
+<p>Vision Foundamential Models</p>
 </section>
+<section id="chapters" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="chapters"><span class="header-section-number">3.2</span> Chapters:</h2>
+<section id="change-detection" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="change-detection"><span class="header-section-number">3.2.1</span> Change Detection</h3>
+<ul>
+<li>Turberas (SAM)</li>
+<li>Incendios Forestales</li>
+</ul>
+</section>
+<section id="land-cover-classification" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="land-cover-classification"><span class="header-section-number">3.2.2</span> Land Cover Classification</h3>
+<ul>
+<li>Capital Natural</li>
+</ul>
+</section>
+<section id="segmetation" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="segmetation"><span class="header-section-number">3.2.3</span> Segmetation</h3>
+<ul>
+<li>Edificaciones</li>
+</ul>
+</section>
+</section>
+<section id="implementación" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="implementación"><span class="header-section-number">3.3</span> Implementación</h2>
+<ul>
+<li>Data Cube Chile</li>
+</ul>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -626,10 +635,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./papers_review_vfm.html" class="pagination-link" aria-label="Papers Review: VFM">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Papers Review: VFM</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
