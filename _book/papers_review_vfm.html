@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -316,14 +336,14 @@ ul.task-list li input[type="checkbox"] {
 <h3 data-number="2.4.1" class="anchored" data-anchor-id="tabla-resumen-general"><span class="header-section-number">2.4.1</span> Tabla Resumen General</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 5%">
-<col style="width: 18%">
-<col style="width: 9%">
-<col style="width: 17%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 13%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -339,7 +359,7 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td>Fuller et al.&nbsp;(2023)</td>
+<td><span class="citation" data-cites="fuller2023croma">Fuller, Millard, and Green (<a href="references.html#ref-fuller2023croma" role="doc-biblioref">2023</a>)</span></td>
 <td>Desarrollar un framework para aprender representaciones unimodales y multimodales para la Observación de la Tierra, aprovechando objetivos autosupervisados contrastivos y de reconstrucción.</td>
 <td>CROMA (autoencoder contrastivo radar-óptico enmascarado), basado en Vision Transformer (ViT), con codificación de posición 2D-ALiBi y X-ALiBi.</td>
 <td>BigEarthNet, fMoW-Sentinel, EuroSAT, Canadian Cropland, DFC2020, DW-Expert, MARIDA. Usando imágenes Sentinel-2 (óptico) y Sentinel-1 (radar) a diferentes resoluciones.</td>
@@ -347,6 +367,26 @@ ul.task-list li input[type="checkbox"] {
 <td>Supera el estado del arte (SatMAE) en un promedio de 5.4% y 6.4% en mIoU para backbones ViT-B y ViT-L, respectivamente.</td>
 <td>Requiere datos multimodales alineados espacialmente. Alto costo computacional para entrenar modelos grandes.</td>
 <td>Alta: Chile posee una amplia cobertura de imágenes Sentinel, lo que permitiría aplicar CROMA para diversas aplicaciones como la clasificación de uso y cobertura del suelo, monitoreo de recursos hídricos, agricultura de precisión, entre otras.</td>
+</tr>
+<tr class="even">
+<td><span class="citation" data-cites="szwarcman_prithvi-eo-20_2024">Szwarcman et al. (<a href="references.html#ref-szwarcman_prithvi-eo-20_2024" role="doc-biblioref">2024</a>)</span></td>
+<td>El estudio busca desarrollar un modelo de base geoespacial multi-temporal llamado Prithvi-EO-2.0. El objetivo es mejorar la capacidad de generalización y la eficiencia de datos en tareas de teledetección, abordando las limitaciones de los modelos existentes en el manejo de la multi-temporalidad.</td>
+<td>Prithvi-EO-2.0 utiliza una arquitectura de codificador-decodificador asimétrico basada en Vision Transformer (ViT) y entrenada con el método de autoencoder enmascarado (MAE). Se incorporan innovaciones como incrustaciones temporales y de ubicación, así como la integración de metadatos de imágenes satelitales.</td>
+<td>El modelo se entrena con un conjunto de datos global de 4.2 millones de muestras de series temporales del archivo Harmonized Landsat Sentinel-2 (HLS) de la NASA a una resolución de 30m. El conjunto de datos abarca una década de imágenes satelitales.</td>
+<td>Prithvi-EO-2.0 se aplica a diversas tareas de teledetección, incluyendo: - Monitoreo de desastres (detección de inundaciones, mapeo de cicatrices de incendios forestales, mapeo de intensidad de quemaduras, detección de deslizamientos de tierra). - Mapeo de uso del suelo y cultivos (segmentación de cultivos en EE. UU., clasificación multi-temporal de la cobertura del suelo y cultivos en Europa). - Monitoreo de la dinámica de los ecosistemas multimodales (estimación de la biomasa sobre el suelo, estimación de la productividad primaria bruta).</td>
+<td>El rendimiento se evalúa utilizando métricas como la precisión general, el índice de Jaccard medio (mIoU), la puntuación F1 y el error cuadrático medio (RMSE) en el benchmark GEO-Bench y en las tareas posteriores. Prithvi-EO-2.0 supera a los modelos de base geoespacial existentes en el benchmark GEO-Bench hasta en un 8% y demuestra un rendimiento de vanguardia en las tareas posteriores.</td>
+<td>El estudio señala la dificultad de generalizar a tareas con resoluciones espaciales significativamente diferentes a las utilizadas en el entrenamiento previo. También se menciona la necesidad de explorar estrategias de aumento de datos para mejorar el rendimiento en conjuntos de datos más pequeños.</td>
+<td>Prithvi-EO-2.0 tiene un alto potencial para abordar problemas ambientales y sociales relevantes en Chile y Latinoamérica. Su capacidad para el monitoreo de desastres, el mapeo de la cobertura del suelo y la estimación de variables ecosistémicas podría ser valiosa para: - Monitoreo de incendios forestales y sequías. - Gestión de recursos hídricos. - Monitoreo de la deforestación y cambios en el uso del suelo. - Evaluación de la productividad agrícola y seguridad alimentaria. - Evaluación de riesgos de desastres naturales como deslizamientos de tierra e inundaciones.</td>
+</tr>
+<tr class="odd">
+<td><span class="citation" data-cites="astruc2024anysat">Astruc et al. (<a href="references.html#ref-astruc2024anysat" role="doc-biblioref">2024</a>)</span></td>
+<td>El estudio busca desarrollar un modelo de aprendizaje automático (AnySat) capaz de analizar datos de Observación de la Tierra (EO) con diferentes resoluciones, escalas y modalidades. Busca superar las limitaciones de los modelos existentes que, generalmente, se entrenan en un solo conjunto de datos con un formato específico. El objetivo es crear un modelo base que se pueda aplicar a diversos conjuntos de datos de EO sin necesidad de reentrenamiento desde cero.</td>
+<td>AnySat utiliza una arquitectura de codificador-combinador-predictor basada en Vision Transformer (ViT) y una estrategia de entrenamiento auto-supervisado basada en la arquitectura de predicción de incrustaciones conjuntas (JEPA). Se añaden codificadores de parches adaptables a la escala para manejar diferentes tamaños de entrada y un codificador temporal ligero para datos de series de tiempo.</td>
+<td>GeoPlex es un conjunto de datos multimodal con 11 modalidades, integrando imágenes aéreas, satelitales, radares y sensores ópticos. Incluye diversas resoluciones, tiempos de revisita y canales, complementado con 4 conjuntos externos (SICKLE, BraDD-S1TS, TimeSen2Crop, Sen1Flood11).</td>
+<td>AnySat se evalúa en diversas tareas de monitoreo ambiental, incluyendo: - Mapeo de la cobertura terrestre. - Identificación de especies de árboles. - Clasificación del tipo de cultivo. - Detección de cambios (deforestación). - Segmentación de inundaciones.</td>
+<td>Se utilizan métricas como la puntuación F1, el índice de Jaccard medio (mIoU), la precisión general (OA) para evaluar el rendimiento de AnySat en las diferentes tareas. AnySat logra resultados de vanguardia en las tareas de clasificación, segmentación y detección de cambios en diversos conjuntos de datos, incluso superando a modelos especializados entrenados en conjuntos de datos específicos.</td>
+<td>Se menciona la dificultad de generalizar a tareas con resoluciones espaciales significativamente diferentes a las utilizadas en el entrenamiento previo. Aunque se ha demostrado que el modelo maneja diferentes resoluciones, se necesita más investigación para garantizar un rendimiento óptimo en todas las escalas.</td>
+<td>AnySat tiene gran potencial en Chile y Latinoamérica para monitorear deforestación, desastres naturales, agricultura, y recursos hídricos. Su capacidad multiescalar y multimodal es clave, aunque requiere adaptación a contextos locales y diferentes resoluciones espaciales.</td>
 </tr>
 <tr class="even">
 <td>Wang et al.&nbsp;(2022)</td>
@@ -381,7 +421,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>Tseng et al.&nbsp;(2023)</td>
 <td>Aborda la escasez de datos etiquetados en la teledetección mediante el desarrollo de Presto, un modelo ligero de Transformers preentrenado para series temporales.</td>
-<td>Transformers con codificador-decodificador, basado en Masked Autoencoding</td>
+<td>PRESTO , Transformers con codificador-decodificador, basado en Masked Autoencoding</td>
 <td>Diversos: CropHarvest, TreeSatAI, EuroSAT, Sen1Floods11, S2-Agri100; resolución y tipo de datos variables (SAR, multiespectral).</td>
 <td>Clasificación de cultivos, detección de especies de árboles, clasificación de cobertura del suelo, mapeo de inundaciones, monitoreo de cultivos.</td>
 <td>Precisión variable según la tarea; en algunos casos supera a los modelos de última generación.</td>
@@ -399,16 +439,6 @@ ul.task-list li input[type="checkbox"] {
 <td>Alta: relevante para evaluación de daños, planificación de emergencias y diseño de sistemas de alerta temprana en Chile.</td>
 </tr>
 <tr class="odd">
-<td>Mall et al.&nbsp;(2023)</td>
-<td>Sin información específica sobre el estudio en las fuentes.</td>
-<td>No especificada.</td>
-<td>No especificada.</td>
-<td>No especificada.</td>
-<td>No se proporcionan métricas clave.</td>
-<td>No especificada.</td>
-<td>Sin información suficiente para evaluar relevancia.</td>
-</tr>
-<tr class="even">
 <td>Li et al.&nbsp;(2023)</td>
 <td>Investiga métodos SSL para reconocimiento automático de objetivos (ATR) en imágenes SAR; propone SAR-JEPA para predicción de gradientes multiescala.</td>
 <td>Basado en Masked Image Modeling (MIM) y Joint-Embedding Predictive Architecture (JEPA).</td>
@@ -418,7 +448,7 @@ ul.task-list li input[type="checkbox"] {
 <td>Requiere grandes datasets SAR para preentrenamiento.</td>
 <td>Moderada: útil para monitoreo de deforestación, pesca ilegal, y evaluación de desastres en Chile y LatAm.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Reed et al.&nbsp;(2023)</td>
 <td>Explora el aprendizaje de representaciones geoespaciales multiescala utilizando Scale-MAE, un MAE sensible a la escala.</td>
 <td>MAE con codificador ViT y decodificador piramidal Laplaciano</td>
@@ -1019,6 +1049,17 @@ ul.task-list li input[type="checkbox"] {
 </table>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-astruc2024anysat" class="csl-entry" role="listitem">
+Astruc, Guillaume, Nicolas Gonthier, Clement Mallet, and Loic Landrieu. 2024. <span>“<span>AnySat: An Earth</span> Observation Model for Any Resolutions, Scales, and Modalities.”</span> <em>arXiv Preprint arXiv:2412.14123</em>.
+</div>
+<div id="ref-fuller2023croma" class="csl-entry" role="listitem">
+Fuller, Anthony, Koreen Millard, and James R Green. 2023. <span>“CROMA: Remote Sensing Representations with Contrastive Radar-Optical Masked Autoencoders.”</span> In <em>Thirty-Seventh Conference on Neural Information Processing Systems</em>.
+</div>
+<div id="ref-szwarcman_prithvi-eo-20_2024" class="csl-entry" role="listitem">
+Szwarcman, Daniela, Sujit Roy, Paolo Fraccaro, orsteinn Elí Gíslason, Benedikt Blumenstiel, Rinki Ghosal, Pedro Henrique de Oliveira, et al. 2024. <span>“Prithvi-<span>EO-2</span>.0: <span>A Versatile Multi-Temporal Foundation Model</span> for <span>Earth Observation Applications</span>.”</span> arXiv. <a href="https://doi.org/10.48550/arXiv.2412.02732">https://doi.org/10.48550/arXiv.2412.02732</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
